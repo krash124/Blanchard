@@ -9,8 +9,17 @@
 
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="js/choices.min.js" defer></script>
+  <script src="js/menu-dropdown.js" defer></script>
+  <script src="js/simplbar.js" defer></script>
+  <script src="js/swiper-hero.js" defer></script>
+  <script src="js/select.js" defer></script>
 </head>
 
 
@@ -246,8 +255,29 @@
     <div class="about__container container">
       <div class="about__block">
         <h2 class="about__title">О нас</h2>
-        <p class="about__deckr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения&nbsp;в производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.</p>
+        <p class="about__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения&nbsp;в производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.</p>
       </div>
+    </div>
+
+  </section>
+
+  <!-- Gallery -->
+
+
+  <section class="gallery">
+
+    <div class="gallery__container container">
+
+      <div class="gallery__gallery-filters">
+        <h2 class="gallery__title">Галерея</h2>
+        <span class="gallery__select-title">Фильтр:</span>
+        <select class="gallery__select select-js" name="select" id="select">
+          <option value="">Живопись</option>
+          <option >Рисунок</option>
+          <option >Скульптура</option>
+        </select>
+      </div>
+
     </div>
 
   </section>
@@ -260,10 +290,6 @@
 
 </main>
 
-
-<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/script.js"></script>
 
 </body>
 
