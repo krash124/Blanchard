@@ -4,8 +4,8 @@
 @font-face {
   font-family: "OpenSans";
   src: url("OpenSans-Regular"),
-    url("/font/OpenSans-Regular.woff2") format('woff2'),
-    url("/font/OpenSans-Regular.woff") format('woff');
+    url("../font/OpenSans-Regular.woff2") format('woff2'),
+    url("../font/OpenSans-Regular.woff") format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -14,8 +14,8 @@
 /* @font-face {
   font-family: "OpenSans";
   src: url("OpenSans-Italic"),
-    url("/font/OpenSans-Italic.woff2") format('woff2'),
-    url("/font/OpenSans-Italic.woff") format('woff');
+    url("../font/OpenSans-Italic.woff2") format('woff2'),
+    url("../font/OpenSans-Italic.woff") format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,8 +24,8 @@
 @font-face {
   font-family: "OpenSans";
   src: url("OpenSans-SemiBold"),
-    url("/font/OpenSans-SemiBold.woff2") format('woff2'),
-    url("/font/OpenSans-SemiBold.woff") format('woff');
+    url("../font/OpenSans-SemiBold.woff2") format('woff2'),
+    url("../font/OpenSans-SemiBold.woff") format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -34,8 +34,8 @@
 @font-face {
   font-family: "OpenSans";
   src: url("OpenSans-Bold"),
-    url("/font/OpenSans-Bold.woff2") format('woff2'),
-    url("/font/OpenSans-Bold.woff") format('woff');
+    url("../font/OpenSans-Bold.woff2") format('woff2'),
+    url("../font/OpenSans-Bold.woff") format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -441,121 +441,121 @@ textarea {
 
 
 .menu__img-1-1 {
-  background-image: url('/img/menu-1-1.jpg');
+  background-image: url('../img/menu-1-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-1-2 {
-  background-image: url('/img/menu-1-2.jpg');
+  background-image: url('../img/menu-1-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-1-3 {
-  background-image: url('/img/menu-1-3.jpg');
+  background-image: url('../img/menu-1-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-1-4 {
-  background-image: url('/img/menu-1-4.jpg');
+  background-image: url('../img/menu-1-4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-2-1 {
-  background-image: url('/img/menu-2-1.jpg');
+  background-image: url('../img/menu-2-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-2-2 {
-  background-image: url('/img/menu-2-2.jpg');
+  background-image: url('../img/menu-2-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-2-3 {
-  background-image: url('/img/menu-2-3.jpg');
+  background-image: url('../img/menu-2-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-2-4 {
-  background-image: url('/img/menu-2-4.jpg');
+  background-image: url('../img/menu-2-4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-3-1 {
-  background-image: url('/img/menu-3-1.jpg');
+  background-image: url('../img/menu-3-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-3-2 {
-  background-image: url('/img/menu-3-2.jpg');
+  background-image: url('../img/menu-3-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-3-3 {
-  background-image: url('/img/menu-3-3.jpg');
+  background-image: url('../img/menu-3-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-3-4 {
-  background-image: url('/img/menu-3-4.jpg');
+  background-image: url('../img/menu-3-4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-4-1 {
-  background-image: url('/img/menu-4-1.jpg');
+  background-image: url('../img/menu-4-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-4-2 {
-  background-image: url('/img/menu-4-2.jpg');
+  background-image: url('../img/menu-4-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-4-3 {
-  background-image: url('/img/menu-4-3.jpg');
+  background-image: url('../img/menu-4-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-4-4 {
-  background-image: url('/img/menu-4-4.jpg');
+  background-image: url('../img/menu-4-4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-5-1 {
-  background-image: url('/img/menu-5-1.jpg');
+  background-image: url('../img/menu-5-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-5-2 {
-  background-image: url('/img/menu-5-2.jpg');
+  background-image: url('../img/menu-5-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-5-3 {
-  background-image: url('/img/menu-5-3.jpg');
+  background-image: url('../img/menu-5-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .menu__img-5-4 {
-  background-image: url('/img/menu-5-4.jpg');
+  background-image: url('../img/menu-5-4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -653,7 +653,7 @@ textarea {
 }
 
 .hero__slide-1 {
-  background-image: url("/img/hero-1-1920.jpg");
+  background-image: url("../img/hero-1-1920.jpg");
   background-size: 125% 110%;
   background-repeat: repeat-x;
   animation-name: heroAnim;
@@ -663,7 +663,7 @@ textarea {
 }
 
 .hero__slide-2 {
-  background-image: url("/img/hero-2-1920.jpg");
+  background-image: url("../img/hero-2-1920.jpg");
   background-size: 125% 110%;
   background-repeat: repeat-x;
   animation-name: heroAnim;
@@ -673,7 +673,7 @@ textarea {
 }
 
 .hero__slide-3 {
-  background-image: url("/img/hero-3-1920.jpg");
+  background-image: url("../img/hero-3-1920.jpg");
   background-size: 125% 110%;
   background-repeat: repeat-x;
   animation-name: heroAnim;
@@ -727,6 +727,28 @@ textarea {
   line-height: 25px;
   color: var(--white);
   background-color: var(--purple-light);
+}
+
+/* About */
+
+.about__container {
+  padding: 80px 0;
+}
+
+.about__block {
+  max-width: 1080px;
+}
+
+.about__title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+}
+
+.about__deckr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 
