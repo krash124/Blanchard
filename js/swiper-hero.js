@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const swiper = new Swiper('.hero__swiper', {
+  const swiperHero = new Swiper('.hero__swiper', {
     loop: true,
     speed: 10000,
     autoplay: {
