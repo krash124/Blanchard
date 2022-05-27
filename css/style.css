@@ -100,7 +100,8 @@ textarea {
 :root {
   --black: #000000;
   --white: #FFFFFF;
-  --gray: #666666;
+  --gray-active: #666666;
+  --gray-disabled:#B3B3B3 ;
   --purple-ultralight: #D1A9F0;
   --purple-light: #9D5CD0;
   --purple-darck: #7943A4;
@@ -768,6 +769,11 @@ textarea {
   padding: 80px 0;
 }
 
+.gallery__gallery-filters {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .gallery__title {
   color: var(--white);
   font-weight: 400;
@@ -775,9 +781,6 @@ textarea {
   line-height: 65px;
 }
 
-.gallery__gallery-filters {
-  flex-direction: column; 
-}
 
 
 /* Select */
@@ -906,7 +909,11 @@ textarea {
   flex-shrink: 0;
   border-radius: 50%;
   cursor: pointer;
-  background-color: var(--gray);
+  background-color: var(--gray-active);
+}
+
+.swiper-button-disabled {
+  background-color: var(--gray-disabled) ;
 }
 
 .gallery__btn-style::before {
@@ -934,6 +941,19 @@ textarea {
   font-size: 16px;
   line-height: 32px;
   color: var(--white);
+}
+
+.gallery__btn-style:hover {
+  background-color: var(--purple-light);
+}
+
+.gallery__btn-style:active {
+  box-shadow: inset 0 0 0 2px var(--black);
+  background-color: var(--purple-darck);
+}
+
+.gallery__btn-style:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--black);
 }
 
 /* Swiper Slides */
