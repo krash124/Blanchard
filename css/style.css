@@ -785,20 +785,41 @@ textarea {
 
 /* Select */
 
-.gallery__select-title {
-  color: var(--white);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 32px;
-}
 
 .gallery__select {
   background-color: transparent;
 }
 
+.gallery__select-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--white);
+}
+
 .choices {
   width: 400px;
 }
+
+.choices__inner {
+  background-color: transparent;
+}
+
+.choices__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--white);
+}
+
+.choices__list.choices__list--dropdown {
+  background-color: transparent;
+}
+
+.choices .choices__list .choices__item.is-selected {
+  display: none;
+}
+
 
 /* Checkbox */
 
@@ -897,7 +918,8 @@ textarea {
 /* Swiper Pagination */
 
 .gallery__swiper-pagination {
-  display: inline-flex;
+  max-width: 130px;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -910,11 +932,11 @@ textarea {
   border-radius: 50%;
   cursor: pointer;
   background-color: var(--gray-active);
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
-.swiper-button-disabled {
-  background-color: var(--gray-disabled) ;
-}
 
 .gallery__btn-style::before {
   content: '';
@@ -937,14 +959,18 @@ textarea {
 }
 
 .gallery__swiper-number {
+  width: 47px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   color: var(--white);
+  text-align: center;
 }
+
 
 .gallery__btn-style:hover {
   background-color: var(--purple-light);
+  /* box-shadow: 0 0 0 2px var(--purple-light); Хотел попробовать сделать анимацию через ,но получаются слишком резкие переходи с hover на active */
 }
 
 .gallery__btn-style:active {
@@ -954,6 +980,12 @@ textarea {
 
 .gallery__btn-style:focus-visible {
   box-shadow: inset 0 0 0 2px var(--black);
+}
+
+.gallery__btn-style.swiper-button-disabled {
+  background-color: var(--gray-disabled);
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
 /* Swiper Slides */
