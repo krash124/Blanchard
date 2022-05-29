@@ -8,13 +8,15 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/swiper-min.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="js/swiper-min.js" defer></script>
+  <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script> -->
   <script src="js/choices.min.js" defer></script>
   <script src="js/menu-dropdown.js" defer></script>
   <script src="js/simplbar.js" defer></script>
@@ -303,75 +305,65 @@
 
       <!-- Swiper -->
 
+
       <div class="gallery__swiper swiper">
         
-        <div class="gallery__swiper-pagination flex">
-          <button class="gallery__swiper-prev gallery__btn-style swiper-btn swiper-btn-prev"></button>
-          <div class="gallery__swiper-number"></div>
-          <button class="gallery__swiper-next gallery__btn-style swiper-btn swiper-btn-next"></button>
-        </div>
+        
+      <div class="gallery__swiper-pagination flex">
+        <button class="gallery__swiper-prev gallery__btn-style swiper-btn swiper-btn-prev"></button>
+        <div class="gallery__swiper-number"></div>
+        <button class="gallery__swiper-next gallery__btn-style swiper-btn swiper-btn-next"></button>
+      </div>
         
         <div class="gallery__wrapper swiper-wrapper">
-          <div class="gallery__slide swiper-slide">
-            <a href="#">
+            <button class="gallery__slide swiper-slide" href="#">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-1-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-1-1024.jpg">
                 <source media="(min-width:320px)" srcset="img/gallery-1-768.jpg">
-                <img src="img/gallery-1-320.jpg" alt="">
+                <img class="gallery__slide-img" src="img/gallery-1-320.jpg" alt="">
               </picture>
-            </a>
-          </div>
-          <div class="gallery__slide swiper-slide">
-            <a href="#">
+            </button>
+            <button class="gallery__slide swiper-slide" href="#">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-2-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-2-1024.jpg">
                 <source media="(min-width:320px)" srcset="img/gallery-2-768.jpg">
-                <img src="img/gallery-2-320.jpg" alt="">
+                <img class="gallery__slide-img" src="img/gallery-2-320.jpg" alt="">
               </picture>
-            </a>
-          </div>
-          <div class="gallery__slide swiper-slide">
-            <a href="#">
+            </button>
+            <button class="gallery__slide swiper-slide" href="#">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-3-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-3-1024.jpg">
                 <source media="(min-width:320px)" srcset="img/gallery-3-768.jpg">
-                <img src="img/gallery-3-320.jpg" alt="">
+                <img class="gallery__slide-img" src="img/gallery-3-320.jpg" alt="">
               </picture>
-            </a>
-          </div>
-          <div class="gallery__slide swiper-slide">
-            <a href="#">
+            </button>
+            <button class="gallery__slide swiper-slide" href="#">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-4-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-4-1024.jpg">
                 <source media="(min-width:320px)" srcset="img/gallery-4-768.jpg">
-                <img src="img/gallery-4-320.jpg" alt="">
+                <img class="gallery__slide-img" src="img/gallery-4-320.jpg" alt="">
               </picture>
-            </a>
-          </div>
-          <div class="gallery__slide swiper-slide">
-            <a href="#">
+            </button>
+            <button class="gallery__slide swiper-slide" href="#">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-5-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-5-1024.jpg">
                 <source media="(min-width:320px)" srcset="img/gallery-5-768.jpg">
-                <img src="img/gallery-5-320.jpg" alt="">
+                <img class="gallery__slide-img" src="img/gallery-5-320.jpg" alt="">
               </picture>
-            </a>
-          </div>
-          <div class="gallery__slide swiper-slide">
-            <a href="#">
+            </button>
+            <button class="gallery__slide swiper-slide" href="#">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-6-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-6-1024.jpg">
                 <source media="(min-width:320px)" srcset="img/gallery-6-768.jpg">
-                <img src="img/gallery-6-320.jpg" alt="">
+                <img class="gallery__slide-img" src="img/gallery-6-320.jpg" alt="">
               </picture>
-            </a>
-          </div>
+            </button>
         </div>
         
       </div>
