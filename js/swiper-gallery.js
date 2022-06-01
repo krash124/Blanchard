@@ -30,5 +30,40 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerGroup: 3,
       }
     },
+
+    a11y: false,
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+
+    watchSlidesProgress: true, // added class swiper-slide-visible
+
+
+    on: {
+      init: function () {
+        this.slides.forEach(slide => {
+          if (!slide.classList.contains('swiper-slide-visible')) {
+            slide.tabIndex = '-1';
+          } else {
+            slide.tabIndex = '';
+          }
+        });
+      },
+      slideChange: function () {
+        this.slides.forEach(slide => {
+          if (!slide.classList.contains('swiper-slide-visible')) {
+            slide.tabIndex = '-1';
+          } else {
+            slide.tabIndex = '';
+          }
+        });
+      }
+    }
+
   })
 })
+
+
+

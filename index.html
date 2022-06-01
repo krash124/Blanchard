@@ -208,7 +208,7 @@
 
       <!-- Header Search -->
 
-      <form class="search-form flex" action="">
+      <form class="search-form flex">
         <input class="search-form__input" type="text" placeholder="Поиск по сайту">
         <button class="search-form__btn background-link">
           <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -303,20 +303,20 @@
 
       </div>
 
-      <!-- Swiper -->
+      <!-- Gallery Swiper -->
 
+      <div class="gallery__rigth">
 
-      <div class="gallery__swiper swiper">
-        
-        
-      <div class="gallery__swiper-pagination flex">
-        <button class="gallery__swiper-prev gallery__btn-style swiper-btn swiper-btn-prev"></button>
-        <div class="gallery__swiper-number"></div>
-        <button class="gallery__swiper-next gallery__btn-style swiper-btn swiper-btn-next"></button>
-      </div>
-        
-        <div class="gallery__wrapper swiper-wrapper">
-            <button class="gallery__slide swiper-slide" href="#">
+        <div class="gallery__swiper-pagination swiper-pagination flex">
+          <button class="gallery__swiper-prev gallery__btn-style swiper-btn swiper-btn-prev"></button>
+          <div class="gallery__swiper-number"></div>
+          <button class="gallery__swiper-next gallery__btn-style swiper-btn swiper-btn-next"></button>
+        </div>
+
+        <div class="gallery__swiper swiper">
+
+          <div class="gallery__wrapper swiper-wrapper">
+            <button class="gallery__slide swiper-slide">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-1-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-1-1024.jpg">
@@ -324,7 +324,7 @@
                 <img class="gallery__slide-img" src="img/gallery-1-320.jpg" alt="">
               </picture>
             </button>
-            <button class="gallery__slide swiper-slide" href="#">
+            <button class="gallery__slide swiper-slide">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-2-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-2-1024.jpg">
@@ -332,7 +332,7 @@
                 <img class="gallery__slide-img" src="img/gallery-2-320.jpg" alt="">
               </picture>
             </button>
-            <button class="gallery__slide swiper-slide" href="#">
+            <button class="gallery__slide swiper-slide">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-3-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-3-1024.jpg">
@@ -340,7 +340,7 @@
                 <img class="gallery__slide-img" src="img/gallery-3-320.jpg" alt="">
               </picture>
             </button>
-            <button class="gallery__slide swiper-slide" href="#">
+            <button class="gallery__slide swiper-slide">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-4-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-4-1024.jpg">
@@ -348,7 +348,7 @@
                 <img class="gallery__slide-img" src="img/gallery-4-320.jpg" alt="">
               </picture>
             </button>
-            <button class="gallery__slide swiper-slide" href="#">
+            <button class="gallery__slide swiper-slide">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-5-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-5-1024.jpg">
@@ -356,7 +356,7 @@
                 <img class="gallery__slide-img" src="img/gallery-5-320.jpg" alt="">
               </picture>
             </button>
-            <button class="gallery__slide swiper-slide" href="#">
+            <button class="gallery__slide swiper-slide">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-6-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-6-1024.jpg">
@@ -364,8 +364,26 @@
                 <img class="gallery__slide-img" src="img/gallery-6-320.jpg" alt="">
               </picture>
             </button>
+          </div>
+
         </div>
-        
+
+      </div>
+      
+      <!-- Gallery Modals -->
+
+      <div class="gallery__modals">
+        <div class="gallery__modals-overlay flex">
+          <div class="gallery__modals-window">
+            <div class="gallery__modals-img"></div>
+            <div class="gallery__modals-info">
+              <h2 class="gallert__modals-autor">Казимир Малевич</h2>
+              <h3 class="gallery__modals-name">Торс (Фигура с розовым лицом)</h3>
+              <p class="galler__modals-data">1928–1929</p>
+              <p class="gallery__modals-descr">Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные работы сам художник), зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах вымышленного художником Космоса, в&nbsp;пространстве без времени. Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном. Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который и&nbsp;становится для Малевича средоточием некоего абсолюта.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
