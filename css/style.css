@@ -883,13 +883,15 @@ textarea {
 .choices__list--dropdown, .choices__list[aria-expanded] {
   border-radius: 6px;
   opacity: 0;
-  transition-property: opacity, overflow;
+  visibility: hidden;
+  transition-property: opacity, visibility;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
 
 .choices__list--dropdown, .is-active.choices__list[aria-expanded] {
   opacity: 1;
+  visibility: visible;
 }
 
 .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
@@ -899,7 +901,17 @@ textarea {
 }
 
 .choices__list.choices__list--dropdown {
+  opacity: 0;
+  visibility: hidden;
   background-color: transparent;
+  transition-property: opacity, visibility;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.choices__list.choices__list--dropdown.is-active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
@@ -930,7 +942,7 @@ textarea {
   transition-timing-function: ease-in-out;
 }
 
-.choices[data-type*=select-one].is-open::after {
+.choices[data-type*=select-one].is-open.is-focused::after {
   content: '';
   display: inline-block;
   width: 7px;
@@ -1096,6 +1108,10 @@ textarea {
 /* Swiper Slides */
 
 
+.gallery__slide {
+  cursor: pointer;
+}
+
 .gallery__slide::before {
   content: '';
   position: absolute;
@@ -1104,8 +1120,8 @@ textarea {
   bottom: 0;
   left: 0;
   padding: 25px;
-  z-index: 1;
   opacity: 0;
+  z-index: 1;
   background-color: var(--opacity-05);
   background-image: url('../img/gallery-loupe.svg');
   background-repeat: no-repeat;
@@ -1159,22 +1175,105 @@ textarea {
   left: 0;
   height: 100vh;
   width: 100%;
+  z-index: 0;
   align-items: center;
 	justify-content: center;
-  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
   background-color: var(--opacity-05);
+  transition-property: opacity, visibility;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.gallery__modals-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
 }
 
 .gallery__modals-window {
+  position: relative;
+  display: none;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.8);
   max-width: 900px;
-  max-height: 500px;
+  min-height: 500px;
   background-color: var(--white);
 }
 
+.gallery__modals-window--visible {
+  display: flex;
+}
+
+.gallery__modals-btn {
+  min-width: 25px;
+  height: 25px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.gallery-btn-exit {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.gallery-btn-exit::before {
+  content: "";
+  position: absolute;
+  top: calc((100% - 1px) / 2);
+  left: calc((100% - (calc(100% + 1px))) / 2);
+  height: 1px;
+  width: calc(100% + 1px);
+  background-color: var(--black);
+  transform: rotate(45deg);
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.gallery-btn-exit::after {
+  content: "";
+  position: absolute;
+  top: calc((100% - 1px) / 2);
+  left: calc((100% - (calc(100% + 1px))) / 2);
+  height: 1px;
+  width: calc(100% + 1px);
+  background-color: var(--black);
+  transform: rotate(135deg);
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.gallery-btn-exit:hover::before,
+.gallery-btn-exit:hover::after,
+.gallery-btn-exit:focus-visible::before,
+.gallery-btn-exit:focus-visible::after {
+  background-color: var(--purple-light);
+}
+
+.gallery-btn-exit:active::before,
+.gallery-btn-exit:active::after {
+  background-color: var(--purple-darck);
+}
+
 .gallery__modals-img {
+  min-width: 500px;
   background-image: url('../img/gallery-mod-1-1920.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+}
+
+.gallery__modals-info {
+  min-height: 258px;
+  max-width: 402px;
+  padding: 8% 50px;
 }
 
 .gallert__modals-autor {
@@ -1192,6 +1291,7 @@ textarea {
 }
 
 .galler__modals-data {
+  margin-bottom: 41px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
