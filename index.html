@@ -19,11 +19,12 @@
   <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script> -->
   <script src="js/choices.min.js" defer></script>
   <script src="js/menu-dropdown.js" defer></script>
-  <script src="js/simplbar.js" defer></script>
-  <script src="js/swiper-hero.js" defer></script>
+  <script src="js/menu-simplbar.js" defer></script>
   <script src="js/select.js" defer></script>
+  <script src="js/swiper-hero.js" defer></script>
   <script src="js/swiper-gallery.js" defer></script>
   <script src="js/gallery-modal.js" defer></script>
+  <!-- <script src="js/modal-simplbar.js" defer></script> -->
 </head>
 
 
@@ -325,7 +326,7 @@
                 <img class="gallery__slide-img" src="img/gallery-1-320.jpg" alt="">
               </picture>
             </button>
-            <button class="gallery__slide swiper-slide">
+            <button class="gallery__slide swiper-slide" data-path="slide-2">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-2-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-2-1024.jpg">
@@ -333,7 +334,7 @@
                 <img class="gallery__slide-img" src="img/gallery-2-320.jpg" alt="">
               </picture>
             </button>
-            <button class="gallery__slide swiper-slide">
+            <button class="gallery__slide swiper-slide" data-path="slide-3">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-3-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-3-1024.jpg">
@@ -341,7 +342,7 @@
                 <img class="gallery__slide-img" src="img/gallery-3-320.jpg" alt="">
               </picture>
             </button>
-            <button class="gallery__slide swiper-slide">
+            <button class="gallery__slide swiper-slide" data-path="slide-4">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-4-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-4-1024.jpg">
@@ -349,7 +350,7 @@
                 <img class="gallery__slide-img" src="img/gallery-4-320.jpg" alt="">
               </picture>
             </button>
-            <button class="gallery__slide swiper-slide">
+            <button class="gallery__slide swiper-slide" data-path="slide-5">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-5-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-5-1024.jpg">
@@ -357,7 +358,7 @@
                 <img class="gallery__slide-img" src="img/gallery-5-320.jpg" alt="">
               </picture>
             </button>
-            <button class="gallery__slide swiper-slide">
+            <button class="gallery__slide swiper-slide" data-path="slide-6">
               <picture>
                 <source media="(min-width:1024px)" srcset="img/gallery-6-1920.jpg">
                 <source media="(min-width:768px)" srcset="img/gallery-6-1024.jpg">
@@ -375,18 +376,81 @@
 
       <div class="gallery__modals">
         <div class="gallery__modals-overlay flex">
-          <div class="gallery__modals-window flex" data-target="slide-1">
-            <button class="gallery__modals-btn gallery-btn-exit"></button>
-            <div class="gallery__modals-img"></div>
-            <div class="gallery__modals-info">
-              <h2 class="gallert__modals-autor">Казимир Малевич</h2>
-              <h3 class="gallery__modals-name">"Торс (Фигура с розовым лицом)"</h3>
-              <p class="galler__modals-data">1928–1929</p>
-              <p class="gallery__modals-descr">Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные работы сам художник), зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах вымышленного художником Космоса, в&nbsp;пространстве без времени. Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном. Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который и&nbsp;становится для Малевича средоточием некоего абсолюта.</p>
+          <div class="gallery__simplebar">
+            <div class="gallery__modals-window flex" data-target="slide-1">
+              <button class="gallery__modals-btn gallery-btn-exit"></button>
+                <div class="gallery__modals-img-1"></div>
+                <div class="gallery__modals-info">
+                  <h2 class="gallert__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"Торс (Фигура с розовым лицом)"</h3>
+                  <p class="galler__modals-data">1928–1929</p>
+                  <p class="gallery__modals-descr">Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные работы сам художник), зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах вымышленного художником Космоса, в&nbsp;пространстве без времени. Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном. Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который и&nbsp;становится для Малевича средоточием некоего абсолюта.</p>
+                </div>
+            </div>
+          </div>
+          <div class="gallery__simplebar">
+            <div class="gallery__modals-window flex" data-target="slide-2">
+              <button class="gallery__modals-btn gallery-btn-exit"></button>
+                <div class="gallery__modals-img-2"></div>
+                <div class="gallery__modals-info">
+                  <h2 class="gallert__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"“Женщина с граблями”"</h3>
+                  <p class="galler__modals-data">1931-1932</p>
+                  <p class="gallery__modals-descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                </div>
+            </div>
+          </div>
+          <div class="gallery__simplebar">
+            <div class="gallery__modals-window flex" data-target="slide-3">
+              <button class="gallery__modals-btn gallery-btn-exit"></button>
+                <div class="gallery__modals-img-3"></div>
+                <div class="gallery__modals-info">
+                  <h2 class="gallert__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"Торс (Фигура с розовым лицом)"</h3>
+                  <p class="galler__modals-data">1928–1929</p>
+                  <p class="gallery__modals-descr">Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные работы сам художник), зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах вымышленного художником Космоса, в&nbsp;пространстве без времени. Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном. Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который и&nbsp;становится для Малевича средоточием некоего абсолюта.</p>
+                </div>
+            </div>
+          </div>
+          <div class="gallery__simplebar">
+            <div class="gallery__modals-window flex" data-target="slide-4">
+              <button class="gallery__modals-btn gallery-btn-exit"></button>
+                <div class="gallery__modals-img-4"></div>
+                <div class="gallery__modals-info">
+                  <h2 class="gallert__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"Торс (Фигура с розовым лицом)"</h3>
+                  <p class="galler__modals-data">1928–1929</p>
+                  <p class="gallery__modals-descr">Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные работы сам художник), зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах вымышленного художником Космоса, в&nbsp;пространстве без времени. Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном. Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который и&nbsp;становится для Малевича средоточием некоего абсолюта.</p>
+                </div>
+            </div>
+          </div>
+          <div class="gallery__simplebar">
+            <div class="gallery__modals-window flex" data-target="slide-5">
+              <button class="gallery__modals-btn gallery-btn-exit"></button>
+                <div class="gallery__modals-img-5"></div>
+                <div class="gallery__modals-info">
+                  <h2 class="gallert__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"Торс (Фигура с розовым лицом)"</h3>
+                  <p class="galler__modals-data">1928–1929</p>
+                  <p class="gallery__modals-descr">Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные работы сам художник), зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах вымышленного художником Космоса, в&nbsp;пространстве без времени. Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном. Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который и&nbsp;становится для Малевича средоточием некоего абсолюта.</p>
+                </div>
+            </div>
+          </div>
+          <div class="gallery__simplebar">
+            <div class="gallery__modals-window flex" data-target="slide-6">
+              <button class="gallery__modals-btn gallery-btn-exit"></button>
+                <div class="gallery__modals-img-6"></div>
+                <div class="gallery__modals-info">
+                  <h2 class="gallert__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"Торс (Фигура с розовым лицом)"</h3>
+                  <p class="galler__modals-data">1928–1929</p>
+                  <p class="gallery__modals-descr">Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные работы сам художник), зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах вымышленного художником Космоса, в&nbsp;пространстве без времени. Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном. Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который и&nbsp;становится для Малевича средоточием некоего абсолюта.</p>
+                </div>
             </div>
           </div>
         </div>
       </div>
+      
 
     </div>
 

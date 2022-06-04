@@ -1262,9 +1262,49 @@ textarea {
   background-color: var(--purple-darck);
 }
 
-.gallery__modals-img {
+.gallery__modals-img-1 {
   min-width: 500px;
   background-image: url('../img/gallery-mod-1-1920.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.gallery__modals-img-2 {
+  min-width: 500px;
+  background-image: url('../img/gallery-mod-2-1920.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.gallery__modals-img-3 {
+  min-width: 500px;
+  background-image: url('../img/gallery-mod-3-1920.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.gallery__modals-img-4 {
+  min-width: 500px;
+  background-image: url('../img/gallery-mod-4-1920.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.gallery__modals-img-5 {
+  min-width: 500px;
+  background-image: url('../img/gallery-mod-5-1920.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.gallery__modals-img-6 {
+  min-width: 500px;
+  background-image: url('../img/gallery-mod-6-1920.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

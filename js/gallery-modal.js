@@ -26,4 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Button
+
+  // document.querySelector('.gallery-btn-exit').addEventListener('click', function() {
+  //   document.querySelector('.gallery__modals-overlay').classList.remove('gallery__modals-overlay--visible');
+  //   document.querySelector('.gallery__modals-window').classList.remove('gallery__modals-window--visible');
+  // })
+
+  
+
 })
