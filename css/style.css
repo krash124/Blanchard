@@ -1263,7 +1263,7 @@ textarea {
 }
 
 .gallery__modals-img-1 {
-  min-width: 500px;
+  min-width: 400px;
   background-image: url('../img/gallery-mod-1-1920.jpg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -1271,7 +1271,7 @@ textarea {
 }
 
 .gallery__modals-img-2 {
-  min-width: 500px;
+  min-width: 400px;
   background-image: url('../img/gallery-mod-2-1920.jpg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -1279,7 +1279,7 @@ textarea {
 }
 
 .gallery__modals-img-3 {
-  min-width: 500px;
+  min-width: 400px;
   background-image: url('../img/gallery-mod-3-1920.jpg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -1287,7 +1287,7 @@ textarea {
 }
 
 .gallery__modals-img-4 {
-  min-width: 500px;
+  min-width: 400px;
   background-image: url('../img/gallery-mod-4-1920.jpg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -1295,7 +1295,7 @@ textarea {
 }
 
 .gallery__modals-img-5 {
-  min-width: 500px;
+  min-width: 400px;
   background-image: url('../img/gallery-mod-5-1920.jpg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -1303,7 +1303,7 @@ textarea {
 }
 
 .gallery__modals-img-6 {
-  min-width: 500px;
+  min-width: 400px;
   background-image: url('../img/gallery-mod-6-1920.jpg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -1313,7 +1313,7 @@ textarea {
 .gallery__modals-info {
   min-height: 258px;
   max-width: 402px;
-  padding: 8% 50px;
+  padding: 4% 50px;
 }
 
 .gallert__modals-autor {
@@ -1346,3 +1346,24 @@ textarea {
 }
 
 
+
+/* Catalog */
+
+
+.catalog__container {
+  background-color: var(--white);
+}
+
+.catalog__descr-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--black);
+}
+
+.catalog__descr-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--black);
+}
