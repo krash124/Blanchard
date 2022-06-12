@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     searchEnabled: false,
     itemSelectText: '',
     shouldSort: false,
+    position: 'bottom'
   });
 
 })

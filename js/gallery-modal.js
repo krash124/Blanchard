@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const btn = document.querySelectorAll('.gallery__slide');
   const modalOverlay = document.querySelector('.gallery__modals-overlay');
   const modalWindow = document.querySelectorAll('.gallery__modals-window');
-  const modalClose = document.querySelectorAll('.gallery-btn-exit');
+  const modalCloseBtn = document.querySelectorAll('.gallery-btn-exit');
 
   
 
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Button
 
-  modalClose.forEach(function(close) {
+  modalCloseBtn.forEach(function(close) {
     close.addEventListener('click', function() {
 
       modalWindow.forEach(el => {
