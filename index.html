@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
   <link rel="stylesheet" href="css/swiper-min.css">
   <link rel="stylesheet" href="css/choices.min.css">
-  <link rel="stylesheet" href="css/accordion.min.css">
+  <!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/accordion.min.css"> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -18,7 +19,8 @@
   <script src="js/swiper-min.js" defer></script>
   <script src="js/choices.min.js" defer></script>
   <script src="js/scroll-lock.min.js" defer></script>
-  <script src="js/accordion.min.js" defer></script>
+  <script src="js/jquery-ui.min.js" defer></script>
+  <!-- <script src="js/accordion.min.js" defer></script> -->
 
   
   <script src="js/menu-dropdown.js" defer></script>
@@ -680,13 +682,13 @@
         <!-- Catalog accordion -->
   
         <div class="catalog__accordion">
-          <ul class="catalog__accordion-container accordion-js">
-            <li class="catalog__accordion-years ac">
-              <button class="catalog__accordion-btn ac-trigger background-link">
+          <ul class="catalog__accordion-container accordion-js" id="accordion">
+            <li class="catalog__accordion-years">
+              <button class="catalog__accordion-btn">
                 <span class="catalog__accordion-heading">C 1400 по 1499 гг.</span>
                 <span class="catalog__accordion-circle circle circle-style"></span>
               </button>
-              <div class="catalog__accordion-block ac-panel">
+              <div class="catalog__accordion-block">
                 <div class="catalog__accordion-content">
                   <ul class="catalog__accordion-list">
                     <li class="catalog__accordion-item">
@@ -765,12 +767,12 @@
                 </div>
               </div>
             </li>
-            <li class="catalog__accordion-years ac">
-              <button class="catalog__accordion-btn ac-trigger">
+            <li class="catalog__accordion-years">
+              <button class="catalog__accordion-btn">
                 <span class="catalog__accordion-heading">C 1500 по 1599 гг.</span>
                 <span class="catalog__accordion-circle circle circle-style"></span>
               </button>
-              <div class="catalog__accordion-block ac-panel">
+              <div class="catalog__accordion-block">
                 <div class="catalog__accordion-content flex">
                   <div class="catalog__accordion-img">
                     <div class="catalog__accordion-background"></div>
@@ -783,12 +785,12 @@
                 </div>
               </div>
             </li>
-            <li class="catalog__accordion-years ac">
-              <button class="catalog__accordion-btn ac-trigger">
+            <li class="catalog__accordion-years">
+              <button class="catalog__accordion-btn">
                 <span class="catalog__accordion-heading">C 1600 по 1699 гг.</span>
                 <span class="catalog__accordion-circle circle circle-style"></span>
               </button>
-              <div class="catalog__accordion-block ac-panel">
+              <div class="catalog__accordion-block">
                 <div class="catalog__accordion-content flex">
                   <div class="catalog__accordion-img">
                     <div class="catalog__accordion-background"></div>
@@ -801,12 +803,12 @@
                 </div>
               </div>
             </li>
-            <li class="catalog__accordion-years ac">
-              <button class="catalog__accordion-btn ac-trigger">
+            <li class="catalog__accordion-years">
+              <button class="catalog__accordion-btn">
                 <span class="catalog__accordion-heading">C 1700 по 1799 гг.</span>
                 <span class="catalog__accordion-circle circle circle-style"></span>
               </button>
-              <div class="catalog__accordion-block ac-panel">
+              <div class="catalog__accordion-block">
                 <div class="catalog__accordion-content flex">
                   <div class="catalog__accordion-img">
                     <div class="catalog__accordion-background"></div>
@@ -819,12 +821,12 @@
                 </div>
               </div>
             </li>
-            <li class="catalog__accordion-years ac">
-              <button class="catalog__accordion-btn ac-trigger">
+            <li class="catalog__accordion-years">
+              <button class="catalog__accordion-btn">
                 <span class="catalog__accordion-heading">C 1800 по 1899 гг.</span>
                 <span class="catalog__accordion-circle circle circle-style"></span>
               </button>
-              <div class="catalog__accordion-block ac-panel">
+              <div class="catalog__accordion-block">
                 <div class="catalog__accordion-content flex">
                   <div class="catalog__accordion-img">
                     <div class="catalog__accordion-background"></div>
@@ -837,12 +839,12 @@
                 </div>
               </div>
             </li>
-            <li class="catalog__accordion-years ac">
-              <button class="catalog__accordion-btn ac-trigger">
+            <li class="catalog__accordion-years">
+              <button class="catalog__accordion-btn">
                 <span class="catalog__accordion-heading">C 1900 по 1999 гг.</span>
                 <span class="catalog__accordion-circle circle circle-style"></span>
               </button>
-              <div class="catalog__accordion-block ac-panel">
+              <div class="catalog__accordion-block">
                 <div class="catalog__accordion-content flex">
                   <div class="catalog__accordion-img">
                     <div class="catalog__accordion-background"></div>
@@ -855,12 +857,12 @@
                 </div>
               </div>
             </li>
-            <li class="catalog__accordion-years ac">
-              <button class="catalog__accordion-btn ac-trigger">
+            <li class="catalog__accordion-years">
+              <button class="catalog__accordion-btn">
                 <span class="catalog__accordion-heading">C 2000 г.</span>
                 <span class="catalog__accordion-circle circle circle-style"></span>
               </button>
-              <div class="catalog__accordion-block ac-panel">
+              <div class="catalog__accordion-block">
                 <div class="catalog__accordion-content flex">
                   <div class="catalog__accordion-img">
                     <div class="catalog__accordion-background"></div>
@@ -887,6 +889,9 @@
 
 
 </main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script> -->
 
 
 </body>
