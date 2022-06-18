@@ -1433,29 +1433,32 @@ textarea {
 
 /* Catalog accordion content */
 
-.catalog__accordion-years {
-  margin-bottom: -1px;
-  border-bottom: 1px solid var(--gray-superlight);
-  border-top: 1px solid transparent;
-}
 
 .catalog__accordion-years:first-child {
   border-top: 1px solid var(--gray-superlight);
-}
-
-.catalog__accordion-years:hover {
-  border-color: var(--purple-light);
 }
 
 .catalog__accordion-btn {
   width: 100%;
   padding: 41px 0;
   display: flex;
+  margin-top: -1px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid var(--gray-superlight);
   justify-content: space-between;
   text-align: center;
   align-items: center;
   background-color: var(--white);
 }
+
+.catalog__accordion-btn:hover {
+  border-color: var(--purple-light);
+}
+
+.catalog__accordion-block {
+  margin-top: -1px;
+  border-top: 1px solid transparent;
+} 
 
 
 .catalog__accordion-list {
