@@ -1425,41 +1425,51 @@ textarea {
   color: var(--purple-light);
 }
 
-/* Catalog accordion */
+/* Catalog accordion button*/
 
 .catalog__accordion {
   width: calc(800 / 1600 * 100%);
 }
 
-/* Catalog accordion content */
-
-
-.catalog__accordion-years:first-child {
+.catalog__accordion-btn:first-child {
   border-top: 1px solid var(--gray-superlight);
 }
 
 .catalog__accordion-btn {
+  position: relative;
   width: 100%;
   padding: 41px 0;
   display: flex;
-  margin-top: -1px;
+  margin-top: 0px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid var(--gray-superlight);
+  cursor: pointer;
   justify-content: space-between;
   text-align: center;
   align-items: center;
   background-color: var(--white);
 }
 
+.catalog__accordion-block {
+  margin-top: -1px;
+  border-bottom: 1px solid transparent;
+} 
+
+.catalog__accordion-block.ui-accordion-content-active {
+  border-color: var(--gray-superlight);
+}
+
 .catalog__accordion-btn:hover {
   border-color: var(--purple-light);
 }
 
-.catalog__accordion-block {
-  margin-top: -1px;
-  border-top: 1px solid transparent;
-} 
+.catalog__accordion-btn:active,
+.catalog__accordion-btn.ui-state-active {
+  border-color: var(--purple-darck);
+}
 
+
+/* Catalog accordion content */
 
 .catalog__accordion-list {
   column-count: 3;
@@ -1531,9 +1541,9 @@ textarea {
 
 
 .circle-style {
+  position: relative;
   display: inline-block;
   border-radius: 100%;
-  position: relative;
   background: var(--gray-ultralight);
 }
 
