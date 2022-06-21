@@ -1431,27 +1431,32 @@ textarea {
   width: calc(800 / 1600 * 100%);
 }
 
-.catalog__accordion-btn:first-child {
+.catalog__accordion-years:first-child .catalog__accordion-btn {
   border-top: 1px solid var(--gray-superlight);
 }
+
 
 .catalog__accordion-btn {
   position: relative;
   width: 100%;
   padding: 41px 0;
   display: flex;
-  margin-top: 0px;
+  margin-top: -1px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid var(--gray-superlight);
   cursor: pointer;
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  background-color: var(--white);
+  color: var(--black);
+  background-color: transparent;
+  transition-property: color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 .catalog__accordion-block {
-  margin-top: -1px;
+  /* margin-top: 0px; */
   border-bottom: 1px solid transparent;
 } 
 
@@ -1459,12 +1464,23 @@ textarea {
   border-color: var(--gray-superlight);
 }
 
+.catalog__accordion-years:first-child .catalog__accordion-btn:hover,
 .catalog__accordion-btn:hover {
   border-color: var(--purple-light);
 }
 
+.catalog__accordion-btn:hover {
+  color: var(--purple-light);
+}
+
+.catalog__accordion-years:first-child .catalog__accordion-btn:active,
+.catalog__accordion-years:first-child .catalog__accordion-btn.ui-state-active {
+  border-color: var(--purple-darck);
+}
+
 .catalog__accordion-btn:active,
 .catalog__accordion-btn.ui-state-active {
+  color: var(--purple-darck);
   border-color: var(--purple-darck);
 }
 
@@ -1476,10 +1492,15 @@ textarea {
 }
 
 .catalog__accordion-heading {
+  position: relative;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  /* color: var(--black); */
+}
+
+.catalog__accordion-date {
+  position: relative;
+  z-index: 1;
 }
 
 .catalog__accordion-name {
@@ -1487,7 +1508,7 @@ textarea {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  /* color: var(--black); */
+  color: var(--black);
 }
 
 
@@ -1537,12 +1558,16 @@ textarea {
   cursor: pointer;
   background-color: transparent;
   transform: rotate(-45deg);
+  transition-property: background-color, transform, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 
 .circle-style {
   position: relative;
   display: inline-block;
+  border: 2px solid transparent;
   border-radius: 100%;
   background: var(--gray-ultralight);
 }
@@ -1553,7 +1578,7 @@ textarea {
   height: 1px;
   width: 12px;
   top: calc((119% - 1px) / 2);
-  left: calc((137% - (calc(57% + 1px))) / 2);
+  left: calc((143% - (calc(57% + 1px))) / 2);
   background-color: var(--gray-darck);
 }
 
@@ -1568,6 +1593,40 @@ textarea {
   transform: rotate(90deg);
 }
 
+.catalog__accordion-heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 8px);
+  height: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: var(--purple-light);
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
 
+.catalog__accordion-btn:hover .circle {
+  background-color: var(--purple-superlight);
+}
 
+.catalog__accordion-btn:active .circle,
+.catalog__accordion-btn.ui-state-active .circle {
+  border-color: var(--purple-light);
+  background-color: var(--purple-superlight);
+  transform: rotate(135deg);
+}
 
+.catalog__accordion-btn:focus-visible {
+  color: var(--white);
+}
+
+.catalog__accordion-btn:focus-visible .circle {
+  background-color: var(--purple-superlight);
+}
+
+.catalog__accordion-btn:focus-visible .catalog__accordion-heading::before {
+  opacity: 1;
+}
