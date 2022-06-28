@@ -28,6 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: '.dev__swiper-prev',
     },
 
+    a11y: false,
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+
   })
 
   

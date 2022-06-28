@@ -1846,8 +1846,26 @@ textarea {
   height: 50px;
 }
 
+.dev__swiper-prev.swiper-btn::before,
+.dev__swiper-next.swiper-btn::before {
+  width: 11px;
+  height: 11px;
+  left: calc(44% - 7px / 2);
+  top: calc(45% - 7px / 2);
+}
+
 .dev__swiper-prev.swiper-button-disabled,
 .dev__swiper-next.swiper-button-disabled {
   opacity: 0;
   cursor: default;
+}
+
+.dev__swiper-prev:hover,
+.dev__swiper-next:hover {
+  background-color: var(--purple-superlight);
+}
+
+.dev__swiper-prev:focus-visible::before,
+.dev__swiper-next:focus-visible::before {
+  color: var(--purple-light);
 }
