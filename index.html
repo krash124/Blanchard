@@ -21,6 +21,8 @@
   <script src="js/scroll-lock.min.js" defer></script>
   <script src="js/jquery-ui.min.js" defer></script>
   <!-- <script src="js/accordion.min.js" defer></script> -->
+  <script src="js/tippy-1.js" defer></script>
+  <script src="js/tippy-2.js" defer></script>
 
   
   <script src="js/menu-dropdown.js" defer></script>
@@ -32,6 +34,7 @@
   <!-- <script src="js/modal-simplbar.js" defer></script> -->
   <script src="js/catalog-accordion-&-tubs.js" defer></script>
   <script src="js/swiper-development.js" defer></script>
+  <script src="js/projects-tippy.js" defer></script>
 </head>
 
 
@@ -693,7 +696,7 @@
               </button>
               <div class="catalog__accordion-block">
                 <div class="catalog__accordion-content">
-                  <ul class="catalog__accordion-list">
+                  <ul class="catalog__accordion-list" id="parent" focusgroup>
                     <li class="catalog__accordion-item">
                       <button class="catalog__accordion-name" data-catalog-path="1">Бенедетто ди Биндо</button>
                     </li>
@@ -899,7 +902,7 @@
 
   <!-- Development -->
 
-  <section class="dev">
+  <article class="dev">
     <div class="dev__container container">
 
       <h2 class="dev__title">События</h2>
@@ -983,9 +986,46 @@
                 <h3 class="dev__appellation">XXIV Международная биеннале молодого искусства</h3>
                 <p class="dev__descr">Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования</p>
               </div>
-            <a class="dev__link" href="">Подробнее</a>
-          </div>
+              <a class="dev__link" href="">Подробнее</a>
             </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- Projects -->
+
+  <section class="projects">
+    <div class="projects__container container">
+      <h2 class="projects__title">Проекты</h2>
+
+      <p class="projects__descr">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское 
+        <button class="projects__tippy tippy" data-template="one">
+          <span class="tippy-logo">i</span>
+        </button> 
+      обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены
+        <button class="projects__tippy tippy" data-template="two">
+          <span class="tippy-logo">i</span>
+        </button> 
+      исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых
+        <button class="projects__tippy tippy" data-template="three">
+          <span class="tippy-logo">i</span>
+        </button> 
+      предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости. Подробнее: blanchard-art.ru/projects</p>
+
+      <!-- Tippy content -->
+
+      <div class="projects__tippy-content tippy-content">
+        <div class="tippy-content__tippy" id="one">
+          <span class="tippy-content__descr">Пример современных тенденций&nbsp;&mdash; современная методология разработки</span>
+        </div>
+        <div class="tippy-content__tippy" id="two">
+          <span class="tippy-content__descr">Приятно, граждане, наблюдать, как сделанные на&nbsp;базе аналитики выводы вызывают у&nbsp;вас эмоции</span>
+        </div>
+        <div class="tippy-content__tippy" id="three">
+          <span class="tippy-content__descr">В&nbsp;стремлении повысить качество</span>
         </div>
       </div>
 

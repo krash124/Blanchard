@@ -1524,6 +1524,14 @@ textarea {
   z-index: 1;
 }
 
+#parent {
+  focus-group: auto;
+}
+
+/* .catalog__accordion-item {
+  focus-group: auto;
+} */
+
 .catalog__accordion-name {
   position: relative;
   cursor: pointer;
@@ -1734,6 +1742,7 @@ textarea {
 }
 
 .dev__title {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
@@ -1858,6 +1867,9 @@ textarea {
 .dev__swiper-next.swiper-button-disabled {
   opacity: 0;
   cursor: default;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 .dev__swiper-prev:hover,
@@ -1865,7 +1877,78 @@ textarea {
   background-color: var(--purple-superlight);
 }
 
-.dev__swiper-prev:focus-visible::before,
-.dev__swiper-next:focus-visible::before {
-  color: var(--purple-light);
+.dev__btn-style:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--purple-light);
+}
+
+/* Projects */
+
+.projects__title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--black);
+}
+
+.projects__descr {
+  max-width: 1080px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--black);
+}
+
+.projects__tippy {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border: 1px solid var(--purple-light);
+  background-color: var(--white);
+  color: var(--black);
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.projects__tippy:hover,
+.projects__tippy:focus-visible {
+  color: var(--white);
+  background-color: var(--purple-light);
+}
+
+.tippy-box[data-theme~='Blanchard'] {
+  padding: 6px 4px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: var(--purple-light);
+  color: var(--white);
+}
+
+.tippy-box[data-theme~='Blanchard'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--purple-light);
+}
+.tippy-box[data-theme~='Blanchard'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--purple-light);
+}
+.tippy-box[data-theme~='Blanchard'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: var(--purple-light);
+}
+.tippy-box[data-theme~='Blanchard'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: var(--purple-light);
+}
+.tippy-box[data-animation='scale'][data-state='hidden'] {
+  transform: scale(0.5);
+      opacity: 0;
+}
+
+/* Tippy content */
+
+.projects__tippy-content {
+  display: none;
 }
