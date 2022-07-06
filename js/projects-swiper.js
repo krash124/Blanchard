@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   const swiperProjects = new Swiper ('.projects__swiper', {
-    pagination: {
-      el: ".gallery__swiper-number",
-      type: "fraction"
-    },
 
     navigation: {
       nextEl: '.projects__swiper-next',

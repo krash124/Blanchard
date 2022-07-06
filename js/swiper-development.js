@@ -20,9 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     },
 
-    pagination: {
-      type: "fraction"
-    },
     navigation: {
       nextEl: '.dev__swiper-next',
       prevEl: '.dev__swiper-prev',

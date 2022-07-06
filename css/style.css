@@ -1839,20 +1839,26 @@ textarea {
 }
 
 .dev__swiper-pagination {
-  position: absolute;
-  bottom: 44%;
+  display: none;
 }
 
 .dev__swiper-prev {
-  right: 25px;
+  position: absolute;
+  top: 50%;
   width: 50px;
   height: 50px;
+  z-index: 2;
+  transform: translateX(-25px);
 }
 
 .dev__swiper-next {
-  left: 1523%;
+  position: absolute;
+  bottom: 44%;
+  left: 100%;
   width: 50px;
   height: 50px;
+  z-index: 2;
+  transform: translateX(-24px);
 }
 
 .dev__swiper-prev.swiper-btn::before,
@@ -1984,13 +1990,78 @@ textarea {
 }
 
 .projects__swiper-pagination {
-  position: absolute;
+  display: none;
 }
 
-.projects__slide-content {
+.projects__swiper-prev {
+  transform: translateX(-74px);
+}
+
+.projects__swiper-next {
+  transform: translateX(74px);
+}
+
+
+.projects__btn-style:hover {
+  background-color: var(--purple-superlight);
+}
+
+.projects__btn-style:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--purple-light);
+}
+
+.projects__btn-style:active {
+  box-shadow: inset 0 0 0 2px var(--purple-light);
+  background-color: var(--purple-superlight);
+}
+
+.projects__btn-style.swiper-button-disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+  background-color: var(--gray-ultralight);
+}
+
+.projects__slide {
   max-width: 450px;
   min-height: 150px;
+  cursor: pointer;
+  border: 1px solid var(--gray-superlight);
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--gray-superlight);
+  background-color: var(--white);
+  transition-property: border;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.projects__slide-img {
+  filter: grayscale(100%) opacity(40%);
+  transition-property: filter;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.projects__slide:active,
+.projects__slide:focus-visible {
+  border-color: var(--purple-light);
+}
+
+.projects__slide:hover .projects__slide-img {
+  filter: none;
+}
+
+/* Contacts */
+
+.contacts__address-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--black);
+}
+
+.contacts__address-loc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--black);
 }
