@@ -394,7 +394,7 @@ textarea {
 
 .menu__dropdown {
   position: absolute;
-  top: 49px;
+  top: 47px;
   padding: 40px 20px 40px 40px;
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
@@ -820,7 +820,7 @@ textarea {
 
 .gallery__container {
   padding-top: 82px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   justify-content: space-between;
 }
 
@@ -1011,7 +1011,7 @@ textarea {
 
 .checkbox-gallery__text {
   position: relative;
-  padding-left: 30px;
+  padding-left: 23px;
   cursor: pointer;
 
 }
@@ -1021,8 +1021,8 @@ textarea {
   position: absolute;
   left: 0;
   top: 50%;
-  width: 18px;
-  height: 18px;
+  width: 11px;
+  height: 11px;
   border: 1px solid var(--white);
   transform: translateY(-50%);
   transition-property: color, border-color;
@@ -1033,10 +1033,10 @@ textarea {
 .checkbox-gallery__text::after {
   content: "";
   position: absolute;
-  left: 10px;
+  left: 7px;
   top: 50%;
-  width: 4px;
-  height: 4px;
+  width: 2px;
+  height: 2px;
   border: 1px solid var(--purple-light);
   border-radius: 50%;
   background-color: var(--purple-light);
@@ -1089,11 +1089,11 @@ textarea {
 /* Gallery Swiper Pagination */
 
 .gallery__swiper-pagination {
-  max-width: 130px;
+  max-width: 134px;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 23px;
+  padding-bottom: 28px;
   position: static;
 }
 
@@ -1148,9 +1148,9 @@ textarea {
 .gallery__slide::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -5px;
   right: 0;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   padding: 25px;
   opacity: 0;
@@ -1158,8 +1158,8 @@ textarea {
   background-color: var(--opacity-05);
   background-image: url('../img/gallery-loupe.svg');
   background-repeat: no-repeat;
-  background-size: 100px;
-  background-position: center;
+  background-size: 23%;
+  background-position: 50% 47%;
   background-clip: content-box;
   transition-property: opacity;
   transition-duration: 0.3s;
@@ -1388,12 +1388,17 @@ textarea {
 }
 
 .catalog__container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: var(--white);
 }
 
+.catalog__top {
+  padding-bottom: 40px;
+}
+
 .catalog__descr-title {
+  padding-bottom: 15px;
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
@@ -1401,6 +1406,7 @@ textarea {
 }
 
 .catalog__descr-text {
+  width: 68%;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -1437,13 +1443,20 @@ textarea {
   width: calc(750 / 1600 * 100%);
 }
 
+.catalog__tabs-img {
+  padding-bottom: 26px;
+}
+
 .catalog__tabs-name {
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
 }
 
 .catalog__tabs-date {
+  display: block;
+  margin-bottom: 13px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -1451,6 +1464,7 @@ textarea {
 }
 
 .catalog__tabs-descr {
+  margin-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -1477,7 +1491,7 @@ textarea {
 .catalog__accordion-btn {
   position: relative;
   width: 100%;
-  padding: 41px 0;
+  padding: 32px 0;
   display: flex;
   margin-top: -1px;
   border-top: 1px solid transparent;
@@ -1514,8 +1528,8 @@ textarea {
   color: var(--purple-light);
 }
 
-.is-active .catalog__accordion-years:first-child .catalog__accordion-btn:active,
-.is-active .catalog__accordion-years:first-child .catalog__accordion-btn {
+.is-active.catalog__accordion-years:first-child .catalog__accordion-btn:active,
+.is-active.catalog__accordion-years .catalog__accordion-btn {
   border-color: var(--purple-darck);
 }
 
@@ -1526,10 +1540,13 @@ textarea {
 }
 
 
+
 /* Catalog accordion content */
 
 .catalog__accordion-list {
-  column-count: 3;
+  /* column-count: 3; */
+  column-gap: 0px;
+  column-width: 196px;
 }
 
 .catalog__accordion-heading {
@@ -1543,11 +1560,6 @@ textarea {
   position: relative;
   z-index: 1;
 }
-
-
-/* .catalog__accordion-item {
-  focus-group: auto;
-} */
 
 .catalog__accordion-name {
   position: relative;
@@ -1601,6 +1613,7 @@ textarea {
 .catalog__accordion-content {
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-right: 34px;
 }
 
 .catalog__accordion-img {
@@ -1609,8 +1622,8 @@ textarea {
 }
 
 .catalog__accordion-background {
-  width: 100%;
-  height: 100%;
+  width: 107%;
+  height: 101%;
   outline: 2px solid var(--gray-superlight);
   outline-offset: 12px;
   background-color: var(--gray-superlight);
@@ -1618,11 +1631,16 @@ textarea {
 
 
 .catalog__accordion-inner {
-  width: calc(275 / 800 * 100%);
-  padding: 5% 0 66px 5%;
+  /* width: calc(275 / 800 * 100%); */
+  /* padding: 5% 0 66px 5%; */
+  padding-top: 5%;
+  padding-right: 0;
+  padding-bottom: 40px;
+  padding-left: 5%;
 }
 
 .catalog__accordion-title {
+  margin-bottom: 8px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1630,6 +1648,8 @@ textarea {
 }
 
 .catalog__accordion-descr {
+  max-width: 275px;
+  margin-bottom: 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1698,8 +1718,8 @@ textarea {
   background-color: var(--purple-superlight);
 }
 
-.catalog__accordion-btn:active .circle,
-.catalog__accordion-btn.ui-state-active .circle {
+.is-active .catalog__accordion-btn:active .circle,
+.is-active .catalog__accordion-btn .circle {
   border-color: var(--purple-light);
   background-color: var(--purple-superlight);
   transform: rotate(135deg);
@@ -1725,6 +1745,9 @@ textarea {
 
 .dev__container {
   position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--white);
 }
 
 
@@ -1751,12 +1774,6 @@ textarea {
 .dev__content {
   padding-top: 13px;
   margin-bottom: auto;
-}
-
-.dev__container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: var(--white);
 }
 
 .dev__title {
@@ -1862,7 +1879,7 @@ textarea {
 
 .dev__swiper-prev {
   position: absolute;
-  top: 50%;
+  bottom: 42.4%;
   width: 50px;
   height: 50px;
   z-index: 2;
@@ -1871,8 +1888,8 @@ textarea {
 
 .dev__swiper-next {
   position: absolute;
-  bottom: 44%;
-  left: 96.8%;
+  bottom: 42.4%;
+  left: 98.4%;
   width: 50px;
   height: 50px;
   z-index: 2;
@@ -1909,7 +1926,7 @@ textarea {
 
 .projects__container {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 82px;
 }
 
 .projects__title {
@@ -1921,7 +1938,7 @@ textarea {
 }
 
 .projects__descr {
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   max-width: 1080px;
   font-weight: 400;
   font-size: 16px;
@@ -1932,8 +1949,8 @@ textarea {
 /* Tippy */
 
 .projects__tippy {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   display: inline-flex;
   border-radius: 100%;
   align-items: center;
@@ -2063,7 +2080,7 @@ textarea {
 
 .projects__block-swiper {
   position: relative;
-  padding: 0 75px;
+  padding: 0 45px;
   align-items: center;
   justify-content: center;
 }
@@ -2073,11 +2090,11 @@ textarea {
 }
 
 .projects__swiper-prev {
-  transform: translateX(-74px);
+  transform: translateX(-45px);
 }
 
 .projects__swiper-next {
-  transform: translateX(74px);
+  transform: translateX(43px);
 }
 
 
@@ -2137,13 +2154,13 @@ textarea {
 
 /* Contacts */
 
-.contacts {
+.contacts__border {
   border: 1px solid var(--gray-superlight);
 }
 
 .contacts__container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 36px;
+  padding-bottom: 33px;
 }
 
 .contacts__flex {
@@ -2152,6 +2169,7 @@ textarea {
 }
 
 .contacts__address-title {
+  padding-top: 6px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -2167,9 +2185,13 @@ textarea {
 
 /* Contacts Form */
 
+.contacts__form {
+  align-items: center;
+}
+
 .form__block {
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 19px;
 }
 
 .form__item {
@@ -2177,9 +2199,9 @@ textarea {
 }
 
 .form__input {
-  padding-top: 9px;
-  padding-right: 43px;
-  padding-bottom: 9px;
+  padding-top: 11px;
+  padding-right: 56px;
+  padding-bottom: 16px;
   padding-left: 24px;
   border: 1px solid var(--black);
   border-radius: 100px;
@@ -2198,7 +2220,7 @@ textarea {
 }
 
 .form__btn {
-  padding: 12.5px 36px;
+  padding: 10.5px 34px;
   border: 3px solid var(--purple-light);
   border-radius: 100px;
   cursor: pointer;
@@ -2302,7 +2324,7 @@ textarea {
 }
 
 .footer__container {
-  padding-top: 47px;
+  padding-top: 49px;
   padding-bottom: 48px;
   justify-content: space-between;
 }
