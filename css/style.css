@@ -40,11 +40,17 @@
   font-style: normal;
   font-display: swap;
 }
+/* 
+html {
+  scroll-behavior: smooth;
+} */
 
 body {
   margin: 0;
   font-family: 'OpenSans', 'sans-serif';
 }
+
+
 
 /* Global style */
 
@@ -246,6 +252,74 @@ textarea {
   background-color: var(--black);
 }
 
+
+.header__top-burger {
+  position: relative;
+  display: none;
+  width: 36px;
+  height: 28px;
+  outline: 2px solid transparent;
+  outline-offset: 4px;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  transition: outline .3s ease-in-out;
+  background-color: transparent;
+}
+
+.header__top-burger::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  height: 3px;
+  width: 100%;
+  background-color: var(--white);
+  transition-property: background-color, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.header__top-burger::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 24px;
+  transition-property: background-color, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  background-color: var(--white);
+}
+
+.burger__line {
+  position: absolute;
+  display: block;
+  height: 3px;
+  top: 50%;
+  width: 28px;
+  transform: translateY(-50%);
+  transition-property: background-color, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  background-color: var(--white);
+}
+
+.header__top-burger:hover::before,
+.header__top-burger:hover::after,
+.header__top-burger:hover .burger__line{
+  background-color: var(--purple-light);
+}
+
+.header__top-burger:focus-visible {
+  outline-color: var(--purple-light);
+}
+
+.header__mobile-form {
+  display: none;
+}
+
 .header__top-nav {
   padding-top: 30px;
   padding-bottom: 27px;
@@ -253,14 +327,21 @@ textarea {
   align-items: center;
 }
 
+.header__nav-container {
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__nav {
-  width: 62.2%;
+  width: 78%;
+  justify-content: space-around;
 }
 
 .nav__lists {
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 76%;
+  justify-content: space-around;
+  width: 72%;
 }
 
 .nav__item {
@@ -283,6 +364,9 @@ textarea {
 }
 
 .header__enter-link {
+  display: flex;
+  width: 79px;
+  justify-content: flex-end;
   align-items: center;
   font-weight: 400;
   font-size: 18px;
@@ -1514,7 +1598,7 @@ textarea {
   visibility: hidden;
 }
 
-.is-active  .catalog__accordion-block {
+.is-active .catalog__accordion-block {
   border-color: var(--gray-superlight);
   visibility: visible;
 }

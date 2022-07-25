@@ -15,6 +15,7 @@
   <!-- <link rel="stylesheet" href="css/accordion.min.css"> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-1024.css">
 
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
   <script src="js/swiper-min.js" defer></script>
@@ -54,49 +55,91 @@
   <header class="header">
 
     <div class="header__top header__top--color">
+
+      
       <div class="header__top-nav flex container">
-        <picture class="logo">
+
+        <button class="header__top-burger burger">
+          <span class="burger__line"></span>
+        </button>
+
+        <picture>
           <source media="(min-width:1024px)" srcset="img/logo-desk.svg">
           <source media="(min-width:768px)" srcset="img/logo-laptop.svg">
           <img src="img/logo-mobile.svg" alt="">
         </picture>
 
-        <nav class="header__nav nav flex">
-          <ul class="nav__lists flex">
-            <li class="nav__item">
-              <a class="nav__item-link background-link" href="#about">О нас</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-link background-link" href="#gallery">Галерея</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-link background-link" href="#catalog">Каталог</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-link background-link" href="#development">События</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-link background-link" href="#projects">Проекты</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-link background-link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <!-- Search mobile -->
 
-        <div class="header__enter">
-          <a class="header__enter-link flex background-link" href="">
-            <span class="header__enter-img flex">
-              <svg class="header__enter-svg" width="18" height="13" viewBox="0 0 18 13" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z"
-                  fill="#FFFFFF" />
+        <form class="header__mobile-form mobile-form">
+          <button class="mobile-form__btn background-link" type="button">
+            <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79501 20.8721 2.79501 13.5104C2.79501 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
               </svg>
-            </span>
-            <span class="header__enter-text">Войти</span>
-          </a>
+          </button>
+          <div class="mobile-form__drop-input search-form flex">
+            <input class="search-form__input search-form__input-mobile" type="text" placeholder="">
+            <button class="search-form__btn search-form__btn-mobile background-link" type="button">
+              <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6.8678" height="1.71695"
+                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                  fill="white" />
+              </svg>
+            </button>
+            <button class="mobile-form__btn-close background-link" type="button">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)" fill="white"/>
+                <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)" fill="white"/>
+                </svg>                
+            </button>
+          </div>
+        </form>
+        
+        <!-- Nav container -->
+
+        <div class="header__nav-container flex">
+          <nav class="header__nav nav flex">
+            <ul class="nav__lists flex">
+              <li class="nav__item">
+                <a class="nav__item-link background-link" href="#about">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link background-link" href="#gallery">Галерея</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link background-link" href="#catalog">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link background-link" href="#development">События</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link background-link" href="#projects">Проекты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link background-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <div class="header__enter">
+            <a class="header__enter-link flex background-link" href="">
+              <span class="header__enter-img flex">
+                <svg class="header__enter-svg" width="18" height="13" viewBox="0 0 18 13" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z"
+                    fill="#FFFFFF" />
+                </svg>
+              </span>
+              <span class="header__enter-text">Войти</span>
+            </a>
+          </div>
+  
         </div>
+
       </div>
     </div>
 
@@ -232,7 +275,7 @@
 
         <form class="search-form flex">
           <input class="search-form__input" type="text" placeholder="Поиск по сайту">
-          <button class="search-form__btn background-link">
+          <button class="search-form__btn background-link" type="button">
             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="6.8678" height="1.71695"
                 transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
