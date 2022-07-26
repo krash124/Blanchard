@@ -40,10 +40,10 @@
   font-style: normal;
   font-display: swap;
 }
-/* 
+
 html {
   scroll-behavior: smooth;
-} */
+}
 
 body {
   margin: 0;
@@ -252,68 +252,8 @@ textarea {
   background-color: var(--black);
 }
 
-
 .header__top-burger {
-  position: relative;
   display: none;
-  width: 36px;
-  height: 28px;
-  outline: 2px solid transparent;
-  outline-offset: 4px;
-  border: none;
-  cursor: pointer;
-  z-index: 3;
-  transition: outline .3s ease-in-out;
-  background-color: transparent;
-}
-
-.header__top-burger::before {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-  height: 3px;
-  width: 100%;
-  background-color: var(--white);
-  transition-property: background-color, transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-}
-
-.header__top-burger::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 24px;
-  transition-property: background-color, transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-  background-color: var(--white);
-}
-
-.burger__line {
-  position: absolute;
-  display: block;
-  height: 3px;
-  top: 50%;
-  width: 28px;
-  transform: translateY(-50%);
-  transition-property: background-color, transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-  background-color: var(--white);
-}
-
-.header__top-burger:hover::before,
-.header__top-burger:hover::after,
-.header__top-burger:hover .burger__line{
-  background-color: var(--purple-light);
-}
-
-.header__top-burger:focus-visible {
-  outline-color: var(--purple-light);
 }
 
 .header__mobile-form {
