@@ -8,15 +8,23 @@ document.addEventListener("DOMContentLoaded", function () {
       fill: "row"
     },
     spaceBetween: 50,
+
+    pagination: {
+      el: '.dev__swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+
     breakpoints: {
       441: {
         slidesPerView: 2,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
 
       768: {
         slidesPerView: 3,
-        spaceBetween: 50
+        spaceBetween: 50,
+        slidesPerGroup: 2,
       }
     },
 
@@ -32,7 +40,34 @@ document.addEventListener("DOMContentLoaded", function () {
       onlyInViewport: false,
     },
 
-  })
+    // Отключение кнопок
+
+    on: {
+      init: function() {
+        checkArrow();
+      },
+      resize: function () {
+        checkArrow();
+      }
+    }
+
+  });
+
+  function checkArrow() {
+    const swiperPrev = document.querySelector('.dev__swiper-prev');
+    const swiperNext = document.querySelector('.dev__swiper-next');
+    const pag = document.querySelector('.dev__swiper-pagination');
+    if ( window.innerWidth > 1650  ) {
+      console.log('Success', window.innerWidth);
+      swiperPrev.style.display = 'block';
+      swiperNext.style.display = 'block';
+      pag.style.display = 'none'
+    } else {
+      swiperPrev.style.display = 'none';
+      swiperNext.style.display = 'none';
+      pag.style.display = 'block'
+    }
+  }
 
   
 })

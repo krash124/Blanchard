@@ -256,15 +256,21 @@ textarea {
   display: none;
 }
 
-.header__mobile-form {
-  display: none;
-}
 
 .header__top-nav {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 27px;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__mobile-form {
+  display: none;
+}
+
+.header__btn-mobile {
+  display: none;
 }
 
 .header__nav-container {
@@ -279,9 +285,9 @@ textarea {
 }
 
 .nav__lists {
+  width: 72%;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 72%;
 }
 
 .nav__item {
@@ -1636,35 +1642,28 @@ textarea {
 
 .catalog__accordion-content {
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   padding-right: 34px;
 }
 
 .catalog__accordion-img {
-  width: 34%;
-  padding: 15px;
-}
-
-.catalog__accordion-background {
-  width: 107%;
-  height: 101%;
-  outline: 2px solid var(--gray-superlight);
-  outline-offset: 12px;
+  min-height: 190px;
+  flex: 0 0 36%;
+  outline: 9px solid var(--white);
+  outline-offset: -12px;
   background-color: var(--gray-superlight);
 }
 
-
 .catalog__accordion-inner {
-  /* width: calc(275 / 800 * 100%); */
-  /* padding: 5% 0 66px 5%; */
-  padding-top: 5%;
+  width: calc(418 / 800 * 100%);
   padding-right: 0;
-  padding-bottom: 40px;
-  padding-left: 5%;
+  padding-left: 3%;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .catalog__accordion-title {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1773,7 +1772,6 @@ textarea {
   padding-bottom: 40px;
   background-color: var(--white);
 }
-
 
 .dev__slide {
   min-height: 700px;
@@ -1897,9 +1895,6 @@ textarea {
   vertical-align: bottom;
 }
 
-.dev__swiper-pagination {
-  display: none;
-}
 
 .dev__swiper-prev {
   position: absolute;
@@ -1944,6 +1939,28 @@ textarea {
 
 .dev__btn-style:focus-visible {
   box-shadow: inset 0 0 0 2px var(--purple-light);
+}
+
+.dev__swiper-prev,
+.dev__swiper-next {
+  display: none;
+}
+
+.dev__swiper-pagination {
+  justify-content: center;
+}
+
+.dev__swiper-pagination {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
+  height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--gray-darck);
 }
 
 /* Projects */
