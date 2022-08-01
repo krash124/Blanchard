@@ -1,12 +1,9 @@
 @media (max-width:1200px) {
 
-  /* .container {
-    max-width: 925px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-  } */
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
   :root {
     --black: #000000;
@@ -212,6 +209,26 @@
     line-height: 64px;
   }
 
+  /* Hero */
+
+  .hero__container {
+    padding-bottom: 14px;
+}
+
+  .hero__block {
+    max-width: 656px;
+    padding-top: 105px;
+  }
+
+  .hero__title {
+    max-width: 603px;
+    line-height: 96px;
+  }
+
+  .hero__descr {
+    margin-bottom: 148px;
+  }
+
 
 
   /* Search mobile */
@@ -241,10 +258,10 @@
   }
 
   .header__mobile-form {
-    position: absolute;
+    position: fixed;
     display: none;
     top: 33px;
-    right: 24px;
+    right: 42px;
     padding: 10px;
     visibility: hidden;
     z-index: 1;
@@ -335,21 +352,131 @@
     background-image: url("../img/hero-3-1024.jpg");
   }
 
+  /* Gallery */
+
+  .gallery__container {
+    padding-top: 80px;
+  }
+
   /* Catalog */
+
+  .catalog__container {
+    padding-bottom: 40px;
+  }
+
+  .catalog__descr-text {
+    width: 100%;
+  }
 
   /* Catalog accordion  */
 
- 
+  .catalog__accordion {
+    width: calc(757 / 1600 * 100%);
+}
+
+.catalog__accordion-content {
+  padding-right: 0;
+}
+
+  .catalog__accordion-list {
+    column-gap: 45px;
+  }
 
   .catalog__accordion-img {
-    min-height: 131px;
-    flex: 0 0 42%;
+    height: 131px;
+    flex: 0 0 44%;
     outline: 7px solid var(--white);
     outline-offset: -9px;
   }
 
   .catalog__accordion-inner {
     padding-left: 5%;
+  }
+
+  .catalog__tabs-date {
+    margin-bottom: 16px;
+  }
+
+  /* Development */
+
+  .dev__container {
+    padding-bottom: 63px;
+  }
+
+  .dev__title {
+    margin-bottom: 19px;
+  }
+
+  .dev__box {
+    padding: 0 33px;
+    padding-bottom: 37px;
+  }
+
+  .dev__slide {
+    min-height: 680px;
+  }
+
+  .dev__location {
+    margin-bottom: 5px;
+    text-align: end;
+  }
+
+  .dev__appellation {
+    margin-bottom: 6px;
+  }
+
+  .dev__link {
+    margin-bottom: 0;
+  }
+
+  /* Projects Swiper */
+
+  .projects__container {
+    padding-top: 57px;
+  }
+
+  .projects__block-swiper {
+    padding: 0 53px;
+  }
+
+  .projects__slide {
+    min-height: 130px;
+  }
+
+  /* Contacts */
+
+  .contacts__container {
+    padding-bottom: 38px;
+  }
+
+  .contacts__address-title {
+    margin-bottom: 8px;
+  }
+
+  .contacts__flex {
+    gap: 30px;
+  }
+
+  .contacts__address-loc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .form__btn {
+    padding: 10.5px 40px;
+  }
+
+  /* Footer */
+
+  .footer__container {
+    padding-top: 40px;
+    padding-bottom: 37px;
+  }
+
+  .footer__icon-svg {
+    width: 60px;
+    height: 60px;
   }
   
 

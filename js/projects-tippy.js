@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     theme: 'Blanchard',
     animation: 'scale',
     inertia: true,
+    trigger: 'click',
   });
 
 });

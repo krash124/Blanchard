@@ -19,11 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
       441: {
         slidesPerView: 2,
         spaceBetween: 30,
+        slidesPerGroup: 2
       },
 
-      768: {
+      900: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 25,
         slidesPerGroup: 2,
       }
     },
