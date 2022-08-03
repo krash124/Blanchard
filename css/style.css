@@ -1450,7 +1450,7 @@ textarea {
 
 .catalog__bottom {
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   gap: 50px;
 }
 
@@ -1477,7 +1477,12 @@ textarea {
 }
 
 .catalog__tabs {
-  width: calc(750 / 1600 * 100%);
+  /* width: calc(750 / 1600 * 100%); */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc((94% - 50px) / 2);
+  min-height: 419px;
+  min-width: 437px;
 }
 
 .catalog__tabs-img {
@@ -1517,7 +1522,12 @@ textarea {
 /* Catalog accordion button*/
 
 .catalog__accordion {
-  width: calc(800 / 1600 * 100%);
+  /* width: calc(800 / 1600 * 100%); */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc((100% - 50px) / 2);
+  /* min-height: 419px; */
+  min-width: 437px;
 }
 
 .catalog__accordion-years:first-child .catalog__accordion-btn {

@@ -42,6 +42,88 @@
     width: 100%;
   }
 
+  /* Catalog */
 
+  .catalog__container {
+    padding-bottom: 24px;
+  }
+
+  .catalog__top {
+    padding-bottom: 21px;
+  }
+
+  /* Catalog tasb */
+
+  .catalog__tabs-img {
+    padding-bottom: 20px;
+  }
+
+  .catalog__tabs-date {
+    margin-bottom: 4px;
+  }
+
+  /* Catalog accordion */
+
+  .catalog__accordion-list {
+    column-gap: 40px;
+  }
+
+  .catalog__accordion-img {
+    height: 187px;
+    flex: 0 0 41%;
+  }
+
+  .catalog__accordion-inner {
+    padding-left: 4%;
+  }
+
+  /* Development */
+
+  .dev__box {
+    padding-bottom: 46px;
+  }
+
+  .dev__location {
+    margin-bottom: 1px;
+    transform: translateX(13px);
+  }
+
+  /* Projects Tippy */
+
+  .projects__descr {
+    max-width: 664px;
+  }
+
+  .projects__descr {
+    margin-bottom: 29px;
+  }
+
+  /* Projects Swiper  */
+
+  .projects__title-swiper {
+    margin-bottom: 29px;
+  }
+
+  .projects__slide {
+    min-height: 106px;
+  }
+
+  /* Contacts Form */
+
+  .form__block {
+    gap: 11px;
+  }
+
+  .form__input {
+    padding-right: 109px;
+  }
+
+  .form__item:first-child {
+    margin-right: 8px;
+  }
+
+  .form__btn {
+    padding: 10.5px 26px;
+  }
 
 }
