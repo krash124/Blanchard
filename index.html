@@ -75,7 +75,7 @@
         <!-- Search mobile -->
 
         <button class="header__btn-mobile background-link" type="button">
-          <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="header__search-svg" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79501 20.8721 2.79501 13.5104C2.79501 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
             </svg>
@@ -314,7 +314,7 @@
       <div class="hero__container container">
 
         <div class="hero__block">
-          <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
+          <h1 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h1>
           <p class="hero__descr">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых
             заданий создаёт предпосылки для&nbsp;новых предложений.</p>
           <a class="hero__btn border-btn" href="#">Подписаться на рассылку</a>
@@ -332,7 +332,7 @@
           <h2 class="about__title">О нас</h2>
           <p class="about__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
             однозначно определяет каждого участника как&nbsp;способного принимать собственные решения касаемо распределения
-            внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип
+            внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что&nbsp;высококачественный прототип
             будущего проекта влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная
             практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный 
             план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних
@@ -393,59 +393,61 @@
             <button class="gallery__swiper-next gallery__btn-style swiper-btn swiper-btn-next"></button>
           </div>
 
-          <div class="gallery__swiper swiper">
+          <div class="gallery__swiper-container">
+            <div class="gallery__swiper swiper">
 
-            <div class="gallery__wrapper swiper-wrapper">
-              <button class="gallery__slide swiper-slide" data-path="slide-1">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="img/gallery-1-1920.jpg">
-                  <source media="(min-width:900px)" srcset="img/gallery-1-1024.jpg">
-                  <source media="(min-width:320px)" srcset="img/gallery-1-768.jpg">
-                  <img class="gallery__slide-img" src="img/gallery-1-320.jpg" alt="">
-                </picture>
-              </button>
-              <button class="gallery__slide swiper-slide" data-path="slide-2">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="img/gallery-2-1920.jpg">
-                  <source media="(min-width:900px)" srcset="img/gallery-2-1024.jpg">
-                  <source media="(min-width:320px)" srcset="img/gallery-2-768.jpg">
-                  <img class="gallery__slide-img" src="img/gallery-2-320.jpg" alt="">
-                </picture>
-              </button>
-              <button class="gallery__slide swiper-slide" data-path="slide-3">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="img/gallery-3-1920.jpg">
-                  <source media="(min-width:900px)" srcset="img/gallery-3-1024.jpg">
-                  <source media="(min-width:320px)" srcset="img/gallery-3-768.jpg">
-                  <img class="gallery__slide-img" src="img/gallery-3-320.jpg" alt="">
-                </picture>
-              </button>
-              <button class="gallery__slide swiper-slide" data-path="slide-4">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="img/gallery-4-1920.jpg">
-                  <source media="(min-width:900px)" srcset="img/gallery-4-1024.jpg">
-                  <source media="(min-width:320px)" srcset="img/gallery-4-768.jpg">
-                  <img class="gallery__slide-img" src="img/gallery-4-320.jpg" alt="">
-                </picture>
-              </button>
-              <button class="gallery__slide swiper-slide" data-path="slide-5">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="img/gallery-5-1920.jpg">
-                  <source media="(min-width:900px)" srcset="img/gallery-5-1024.jpg">
-                  <source media="(min-width:320px)" srcset="img/gallery-5-768.jpg">
-                  <img class="gallery__slide-img" src="img/gallery-5-320.jpg" alt="">
-                </picture>
-              </button>
-              <button class="gallery__slide swiper-slide" data-path="slide-6">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="img/gallery-6-1920.jpg">
-                  <source media="(min-width:900px)" srcset="img/gallery-6-1024.jpg">
-                  <source media="(min-width:320px)" srcset="img/gallery-6-768.jpg">
-                  <img class="gallery__slide-img" src="img/gallery-6-320.jpg" alt="">
-                </picture>
-              </button>
+              <div class="gallery__wrapper swiper-wrapper">
+                <button class="gallery__slide swiper-slide" data-path="slide-1">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/gallery-1-1920.jpg">
+                    <source media="(min-width:900px)" srcset="img/gallery-1-1024.jpg">
+                    <source media="(min-width:662px)" srcset="img/gallery-1-768.jpg">
+                    <img class="gallery__slide-img" src="img/gallery-1-320.jpg" alt="">
+                  </picture>
+                </button>
+                <button class="gallery__slide swiper-slide" data-path="slide-2">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/gallery-2-1920.jpg">
+                    <source media="(min-width:900px)" srcset="img/gallery-2-1024.jpg">
+                    <source media="(min-width:662px)" srcset="img/gallery-2-768.jpg">
+                    <img class="gallery__slide-img" src="img/gallery-2-320.jpg" alt="">
+                  </picture>
+                </button>
+                <button class="gallery__slide swiper-slide" data-path="slide-3">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/gallery-3-1920.jpg">
+                    <source media="(min-width:900px)" srcset="img/gallery-3-1024.jpg">
+                    <source media="(min-width:662px)" srcset="img/gallery-3-768.jpg">
+                    <img class="gallery__slide-img" src="img/gallery-3-320.jpg" alt="">
+                  </picture>
+                </button>
+                <button class="gallery__slide swiper-slide" data-path="slide-4">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/gallery-4-1920.jpg">
+                    <source media="(min-width:900px)" srcset="img/gallery-4-1024.jpg">
+                    <source media="(min-width:662px)" srcset="img/gallery-4-768.jpg">
+                    <img class="gallery__slide-img" src="img/gallery-4-320.jpg" alt="">
+                  </picture>
+                </button>
+                <button class="gallery__slide swiper-slide" data-path="slide-5">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/gallery-5-1920.jpg">
+                    <source media="(min-width:900px)" srcset="img/gallery-5-1024.jpg">
+                    <source media="(min-width:662px)" srcset="img/gallery-5-768.jpg">
+                    <img class="gallery__slide-img" src="img/gallery-5-320.jpg" alt="">
+                  </picture>
+                </button>
+                <button class="gallery__slide swiper-slide" data-path="slide-6">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="img/gallery-6-1920.jpg">
+                    <source media="(min-width:900px)" srcset="img/gallery-6-1024.jpg">
+                    <source media="(min-width:662px)" srcset="img/gallery-6-768.jpg">
+                    <img class="gallery__slide-img" src="img/gallery-6-320.jpg" alt="">
+                  </picture>
+                </button>
+              </div>
+  
             </div>
-
           </div>
 
         </div>
@@ -686,11 +688,11 @@
               <h3 class="catalog__tabs-name">Доменико Гирландайо</h3>
               <span class="catalog__tabs-date">
                 <time datetime="1448-06-02">2 июня 1448</time> 
-                <span>-</span>
+                <span>---</span>
                 <time datetime="1494-01-11">11 января 1494.</time>
               </span>
               <p class="catalog__tabs-descr">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель
-                художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной
+                художественной династии, которую продолжили его&nbsp;брат Давид и&nbsp;сын Ридольфо. Глава художественной
                 мастерской, где юный Микеланджело в&nbsp;течение года овладевал профессиональными навыками. Автор
                 фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь
                 библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того&nbsp;времени).</p>
@@ -1293,8 +1295,9 @@
                   <input class="form__input" type="tel" placeholder="Телефон*" name="phone" id="phone">
                 </div>
   
-                <button class="form__btn border-btn ">
-                  Заказать обратный звонок
+                <button class="form__btn border-btn">
+                  <span class="form__btn-desktop">Заказать обратный звонок</span>
+                  <span class="form__btn-mobile">Заказать</span>
                 </button>
   
               </form>
@@ -1356,8 +1359,8 @@
 
       <div class="footer__container container flex">
         <picture class="logo">
-          <source media="(min-width:768px)" srcset="img/logo-footer.svg">
-          <img src="img/logo-footer-mobile.svg" alt="">
+          <source media="(min-width:663px)" srcset="img/logo-footer.svg">
+          <img src="img/logo-footer-mob.svg" alt="">
         </picture>
 
         <div class="footer__soc">

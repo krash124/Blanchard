@@ -669,7 +669,7 @@ textarea {
 
 
 .search-form__input {
-  min-width: 217px;
+  width: 217px;
   border-bottom: 1px solid var(--white);
   color: var(--white);
   background: transparent;
@@ -853,13 +853,18 @@ textarea {
   padding-bottom: 80px;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 50px;
 }
 
 .gallery__gallery-filters {
+  min-width: 281px;
+  max-width: 400px;
+  min-height: 385px;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 435px;
-  width: calc(400 / 1600 * 100%);
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc((7% - 50px) / 2);
 }
 
 .gallery__title {
@@ -988,6 +993,10 @@ textarea {
   display: none;
 }
 
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 0;
+}
+
 .choices[data-type*=select-one]::after {
   content: '';
   display: inline-block;
@@ -1110,12 +1119,16 @@ textarea {
 
 /* Gallery Swiper */
 
-
 .gallery__rigth {
-  width: calc(1150 / 1600 * 100%);
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc((100% - 50px) / 2);
+  min-height: 375px;
+  min-width: 593px;
 }
-
 
 /* Gallery Swiper Pagination */
 
@@ -1477,7 +1490,6 @@ textarea {
 }
 
 .catalog__tabs {
-  /* width: calc(750 / 1600 * 100%); */
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: calc((94% - 50px) / 2);
@@ -1522,11 +1534,10 @@ textarea {
 /* Catalog accordion button*/
 
 .catalog__accordion {
-  /* width: calc(800 / 1600 * 100%); */
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: calc((100% - 50px) / 2);
-  /* min-height: 419px; */
+  min-height: 419px;
   min-width: 437px;
 }
 
@@ -2295,14 +2306,21 @@ textarea {
   border: 3px solid var(--purple-light);
   border-radius: 100px;
   cursor: pointer;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
   color: var(--purple-light);
   background-color: var(--white);
   transition-property: color, background-color, border;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+}
+
+.form__btn-desktop {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.form__btn-mobile {
+  display: none;
 }
 
 .form__btn:hover {
@@ -2379,7 +2397,7 @@ textarea {
 /* Map  */
 
 .map__container {
-  width: 100%;
+  display: block;
   height: 700px;
 }
 

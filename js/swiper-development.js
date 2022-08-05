@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiperDevelopment = new Swiper ('.dev__swiper', {
 
     slidesPerView: 1,
+    slidesPerGroup: 1,
     grid: {
       rows: 1,
       fill: "row"
