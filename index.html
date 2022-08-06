@@ -8,7 +8,7 @@
   <title>Blanchard</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="css/simplebar.css">
   <link rel="stylesheet" href="css/swiper-min.css">
   <link rel="stylesheet" href="css/choices.min.css">
   <!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/style-768.css">
   <link rel="stylesheet" href="css/style-320.css">
 
-  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js" defer></script>
+  <script src="js/simplebar.js" defer></script>
   <script src="js/swiper-min.js" defer></script>
   <script src="js/choices.min.js" defer></script>
   <script src="js/scroll-lock.min.js" defer></script>
@@ -301,6 +301,8 @@
 
     <section class="hero">
 
+      <h1 class="hero__title-general">Blanchard — художественная галерея</h1>
+
 
       <div class="hero__swiper swiper">
         <div class="hero__slider swiper-wrapper">
@@ -314,7 +316,7 @@
       <div class="hero__container container">
 
         <div class="hero__block">
-          <h1 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h1>
+          <h2 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
           <p class="hero__descr">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых
             заданий создаёт предпосылки для&nbsp;новых предложений.</p>
           <a class="hero__btn border-btn" href="#">Подписаться на рассылку</a>
@@ -460,18 +462,22 @@
               <div class="gallery__modals-window flex" data-target="slide-1">
                 <button class="gallery__modals-btn gallery-btn-exit"></button>
                 <div class="gallery__modals-img-1"></div>
-                <div class="gallery__modals-info">
-                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                  <h3 class="gallery__modals-name">"Торс (Фигура с розовым лицом)"</h3>
-                  <p class="gallery__modals-data">1928–1929</p>
-                  <p class="gallery__modals-descr">Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные
-                    работы сам художник), зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли
-                    К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах вымышленного художником Космоса,
-                    в&nbsp;пространстве без времени. Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой
-                    архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном.
-                    Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит
-                    о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который
-                    и&nbsp;становится для Малевича средоточием некоего абсолюта.</p>
+                <div class="gallery__modals-info flex">
+                  <div class="gallery__modal-title">
+                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                    <h3 class="gallery__modals-name">"Торс (Фигура с розовым лицом)"</h3>
+                    <p class="gallery__modals-data">1928–1929</p>
+                  </div>
+                  <div class="gallery__midal-text">
+                    <p class="gallery__modals-descr">Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные
+                      работы сам художник), зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли
+                      К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах вымышленного художником Космоса,
+                      в&nbsp;пространстве без времени. Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой
+                      архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном.
+                      Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит
+                      о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который
+                      и&nbsp;становится для Малевича средоточием некоего абсолюта.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -479,13 +485,17 @@
               <div class="gallery__modals-window flex" data-target="slide-2">
                 <button class="gallery__modals-btn gallery-btn-exit"></button>
                 <div class="gallery__modals-img-2"></div>
-                <div class="gallery__modals-info">
-                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                  <h3 class="gallery__modals-name">"Женщина с граблями"</h3>
-                  <p class="gallery__modals-data">1931-1932</p>
-                  <p class="gallery__modals-descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира
-                    Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как
-                    первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                <div class="gallery__modals-info flex">
+                  <div class="gallery__modal-title">
+                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                    <h3 class="gallery__modals-name">"Женщина с граблями"</h3>
+                    <p class="gallery__modals-data">1931-1932</p>
+                  </div>
+                  <div class="gallery__midal-text">
+                    <p class="gallery__modals-descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира
+                      Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как
+                      первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -493,13 +503,17 @@
               <div class="gallery__modals-window flex" data-target="slide-3">
                 <button class="gallery__modals-btn gallery-btn-exit"></button>
                 <div class="gallery__modals-img-3"></div>
-                <div class="gallery__modals-info">
-                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                  <h3 class="gallery__modals-name">"Уборка ржи"</h3>
-                  <p class="gallery__modals-data">1912</p>
-                  <p class="gallery__modals-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
-                    porro accusantium dolorem dolor incidunt provident, veniam repellat consequuntur earum est
-                    voluptatibus vitae non, quia impedit ipsam nisi. Quisquam, illo provident.</p>
+                <div class="gallery__modals-info flex">
+                  <div class="gallery__modal-title">
+                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                    <h3 class="gallery__modals-name">"Уборка ржи"</h3>
+                    <p class="gallery__modals-data">1912</p>
+                  </div>
+                  <div class="gallery__midal-text">
+                    <p class="gallery__modals-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+                      porro accusantium dolorem dolor incidunt provident, veniam repellat consequuntur earum est
+                      voluptatibus vitae non, quia impedit ipsam nisi. Quisquam, illo provident.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -507,13 +521,17 @@
               <div class="gallery__modals-window flex" data-target="slide-4">
                 <button class="gallery__modals-btn gallery-btn-exit"></button>
                 <div class="gallery__modals-img-4"></div>
-                <div class="gallery__modals-info">
-                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                  <h3 class="gallery__modals-name">"Супрематизм"</h3>
-                  <p class="gallery__modals-data">999-999</p>
-                  <p class="gallery__modals-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-                    pariatur, perspiciatis tempore excepturi, sapiente ab quidem dolorum, alias delectus ipsum
-                    asperiores fuga eum omnis laboriosam? Quia odit odio cum sint.</p>
+                <div class="gallery__modals-info flex">
+                  <div class="gallery__modal-title">
+                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                    <h3 class="gallery__modals-name">"Супрематизм"</h3>
+                    <p class="gallery__modals-data">999-999</p>
+                  </div>
+                  <div class="gallery__midal-text">
+                    <p class="gallery__modals-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+                      pariatur, perspiciatis tempore excepturi, sapiente ab quidem dolorum, alias delectus ipsum
+                      asperiores fuga eum omnis laboriosam? Quia odit odio cum sint.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -521,20 +539,24 @@
               <div class="gallery__modals-window flex" data-target="slide-5">
                 <button class="gallery__modals-btn gallery-btn-exit"></button>
                 <div class="gallery__modals-img-5"></div>
-                <div class="gallery__modals-info">
-                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                  <h3 class="gallery__modals-name">"Женщина с вёдрами"</h3>
-                  <p class="gallery__modals-data">1912</p>
-                  <p class="gallery__modals-descr">&laquo;Женщина с&nbsp;вёдрами&raquo; Казимира Малевича&nbsp;&mdash;
-                    яркое произведение авангардного искусства, написанное в&nbsp;1912&nbsp;году. Ныне картина хранится
-                    в&nbsp;коллекции нью-йоркского Музея современного искусства.
-
-                    Идеи супрематизма были навеяны работами Фернана Леже, а&nbsp;ранее и&nbsp;Поля Сезанна, который
-                    считал, что все формы в&nbsp;природе могут быть сведены к&nbsp;сфере, цилиндру и&nbsp;конусу.
-                    Однако, Малевич более решительно продвинулся к&nbsp;абстракции, рассекая фигуру и&nbsp;плоскость
-                    изображения в&nbsp;различные взаимосвязанные геометрические формы. Он&nbsp;утверждал, что сам
-                    по&nbsp;себе супрематизм приведет к&nbsp;&laquo;превосходству чистого чувства и&nbsp;восприятия
-                    в&nbsp;изобразительном искусстве&raquo;.</p>
+                <div class="gallery__modals-info flex">
+                  <div class="gallery__modal-title">
+                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                    <h3 class="gallery__modals-name">"Женщина с вёдрами"</h3>
+                    <p class="gallery__modals-data">1912</p>
+                  </div>
+                  <div class="gallery__midal-text">
+                    <p class="gallery__modals-descr">&laquo;Женщина с&nbsp;вёдрами&raquo; Казимира Малевича&nbsp;&mdash;
+                      яркое произведение авангардного искусства, написанное в&nbsp;1912&nbsp;году. Ныне картина хранится
+                      в&nbsp;коллекции нью-йоркского Музея современного искусства.
+  
+                      Идеи супрематизма были навеяны работами Фернана Леже, а&nbsp;ранее и&nbsp;Поля Сезанна, который
+                      считал, что все формы в&nbsp;природе могут быть сведены к&nbsp;сфере, цилиндру и&nbsp;конусу.
+                      Однако, Малевич более решительно продвинулся к&nbsp;абстракции, рассекая фигуру и&nbsp;плоскость
+                      изображения в&nbsp;различные взаимосвязанные геометрические формы. Он&nbsp;утверждал, что сам
+                      по&nbsp;себе супрематизм приведет к&nbsp;&laquo;превосходству чистого чувства и&nbsp;восприятия
+                      в&nbsp;изобразительном искусстве&raquo;.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -542,18 +564,21 @@
               <div class="gallery__modals-window flex" data-target="slide-6">
                 <button class="gallery__modals-btn gallery-btn-exit"></button>
                 <div class="gallery__modals-img-6"></div>
-                <div class="gallery__modals-info">
-                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                  <h3 class="gallery__modals-name">"Супрематизм"</h3>
-                  <p class="gallery__modals-data">1915–1916</p>
-                  <p class="gallery__modals-descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                    beatae quis sunt quisquam praesentium fugit, temporibus veniam, error natus delectus laborum ex
-                    perferendis voluptate exercitationem ab consectetur voluptatum! Nam, voluptate?</p>
+                <div class="gallery__modals-info flex">
+                  <div class="gallery__modal-title">
+                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                    <h3 class="gallery__modals-name">"Супрематизм"</h3>
+                    <p class="gallery__modals-data">1915–1916</p>
+                  </div>
+                  <div class="gallery__midal-text">
+                    <p class="gallery__modals-descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                      beatae quis sunt quisquam praesentium fugit, temporibus veniam, error natus delectus laborum ex
+                      perferendis voluptate exercitationem ab consectetur voluptatum! Nam, voluptate?</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-       
 
 
       </div>
@@ -1043,7 +1068,8 @@
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/dev-1-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/dev-1-1024.jpg">
-                  <img class="dev__img" src="img/dev-1-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/dev-1-768.jpg">
+                  <img class="dev__img" src="img/dev-1-320.jpg" alt="">
                 </picture>
               </div>
               <div class="dev__box flex">
@@ -1061,7 +1087,8 @@
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/dev-2-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/dev-2-1024.jpg">
-                  <img class="dev__img" src="img/dev-2-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/dev-2-768.jpg">
+                  <img class="dev__img" src="img/dev-2-320.jpg" alt="">
                 </picture>
               </div>
               <div class="dev__box flex">
@@ -1080,7 +1107,8 @@
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/dev-3-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/dev-3-1024.jpg">
-                  <img class="dev__img" src="img/dev-3-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/dev-3-768.jpg">
+                  <img class="dev__img" src="img/dev-3-320.jpg" alt="">
                 </picture>
               </div>
               <div class="dev__box flex">
@@ -1098,7 +1126,8 @@
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/dev-4-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/dev-4-1024.jpg">
-                  <img class="dev__img" src="img/dev-4-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/dev-4-768.jpg">
+                  <img class="dev__img" src="img/dev-4-320.jpg" alt="">
                 </picture>
               </div>
               <div class="dev__box flex">
@@ -1116,7 +1145,8 @@
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/dev-5-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/dev-5-1024.jpg">
-                  <img class="dev__img" src="img/dev-5-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/dev-5-768.jpg">
+                  <img class="dev__img" src="img/dev-5-320.jpg" alt="">
                 </picture>
               </div>
               <div class="dev__box flex">
@@ -1148,15 +1178,15 @@
 
         <!-- Projects Tippy -->
 
-        <p class="projects__descr">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей
+        <p class="projects__descr">Предварительные выводы: постоянное информационно---пропагандистское обеспечение нашей
           деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые
           государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего
-          возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
+          возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно---пропагандистское
           <button class="projects__tippy tippy" data-template="one">
             <span class="tippy-logo">i</span>
           </button>
           обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых
-          решений. И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены
+          решений. И&nbsp;нет&nbsp;сомнений, что действия представителей оппозиции могут быть рассмотрены
           <button class="projects__tippy tippy" data-template="two">
             <span class="tippy-logo">i</span>
           </button>
@@ -1164,10 +1194,10 @@
           <button class="projects__tippy tippy" data-template="three">
             <span class="tippy-logo">i</span>
           </button>
-          предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных социальных
+          предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также&nbsp;представители&nbsp;современных социальных
           резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны
           с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости. Подробнее:
-          <a class="projects__link" href="">blanchard-art.ru</a>
+          <a class="projects__link" href="">blanchard-art.ru/projects</a>
         </p>
 
         <!-- Projects Tippy content -->
@@ -1204,63 +1234,72 @@
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/projects-1-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/projects-1-1024.jpg">
-                  <img class="projects__slide-img" src="img/projects-1-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/projects-1-768.jpg">
+                  <img class="projects__slide-img" src="img/projects-1-320.jpg" alt="">
                 </picture>
               </button>
               <button class="projects__slide swiper-slide flex">
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/projects-2-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/projects-2-1024.jpg">
-                  <img class="projects__slide-img" src="img/projects-2-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/projects-2-768.jpg">
+                  <img class="projects__slide-img" src="img/projects-2-320.jpg" alt="">
                 </picture>
               </button>
               <button class="projects__slide swiper-slide flex">
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/projects-3-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/projects-3-1024.jpg">
-                  <img class="projects__slide-img" src="img/projects-3-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/projects-3-768.jpg">
+                  <img class="projects__slide-img" src="img/projects-3-320.jpg" alt="">
                 </picture>
               </button>
               <button class="projects__slide swiper-slide flex">
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/projects-4-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/projects-4-1024.jpg">
-                  <img class="projects__slide-img" src="img/projects-4-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/projects-4-768.jpg">
+                  <img class="projects__slide-img" src="img/projects-4-320.jpg" alt="">
                 </picture>
               </button>
               <button class="projects__slide swiper-slide flex">
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/projects-5-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/projects-5-1024.jpg">
-                  <img class="projects__slide-img" src="img/projects-5-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/projects-5-768.jpg">
+                  <img class="projects__slide-img" src="img/projects-5-320.jpg" alt="">
                 </picture>
               </button>
               <button class="projects__slide swiper-slide flex">
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/projects-6-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/projects-6-1024.jpg">
-                  <img class="projects__slide-img" src="img/projects-6-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/projects-6-768.jpg">
+                  <img class="projects__slide-img" src="img/projects-6-320.jpg" alt="">
                 </picture>
               </button>
               <button class="projects__slide swiper-slide flex">
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/projects-7-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/projects-7-1024.jpg">
-                  <img class="projects__slide-img" src="img/projects-7-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/projects-7-768.jpg">
+                  <img class="projects__slide-img" src="img/projects-7-320.jpg" alt="">
                 </picture>
               </button>
               <button class="projects__slide swiper-slide flex">
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/projects-8-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/projects-8-1024.jpg">
-                  <img class="projects__slide-img" src="img/projects-8-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/projects-8-768.jpg">
+                  <img class="projects__slide-img" src="img/projects-8-320.jpg" alt="">
                 </picture>
               </button>
               <button class="projects__slide swiper-slide flex">
                 <picture>
                   <source media="(min-width:1200px)" srcset="img/projects-9-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/projects-9-1024.jpg">
-                  <img class="projects__slide-img" src="img/projects-9-768.jpg" alt="">
+                  <source media="(min-width:662px)" srcset="img/projects-9-768.jpg">
+                  <img class="projects__slide-img" src="img/projects-9-320.jpg" alt="">
                 </picture>
               </button>
             </div>
@@ -1310,7 +1349,7 @@
               <ul class="contacts__social-list flex">
                 <li class="contacts__social-item">
                   <a class="contacts__social-icon" href="">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="contacts__icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
                         fill="#30BF39" />
@@ -1322,7 +1361,7 @@
                 </li>
                 <li class="contacts__social-item">
                   <a class="contacts__social-icon" href="">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="contacts__icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
                         fill="#26A5E4" />

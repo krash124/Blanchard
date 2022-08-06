@@ -707,6 +707,17 @@ textarea {
   position: relative;
 }
 
+.hero__title-general {
+  position: absolute;
+  width: 1px;  
+  height: 1px;  
+  margin: -1px;  
+  border: 0;  
+  padding: 0;
+  clip: rect(0, 0, 0, 0);  
+  overflow: hidden;
+}
+
 .hero__container {
   padding-bottom: 23px;
 }
@@ -1133,12 +1144,13 @@ textarea {
 /* Gallery Swiper Pagination */
 
 .gallery__swiper-pagination {
+  position: static;
   max-width: 134px;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 23px;
   padding-bottom: 28px;
-  position: static;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
 }
 
 .gallery__btn-style {
@@ -1262,6 +1274,7 @@ textarea {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
+  overflow-y: auto;
   background-color: var(--opacity-05);
   transition-property: opacity, visibility;
   transition-duration: 0.3s;
@@ -1279,7 +1292,7 @@ textarea {
   display: none;
   box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.8);
   max-width: 900px;
-  min-height: 500px;
+  max-height: 500px;
   background-color: var(--white);
 }
 
@@ -1346,56 +1359,66 @@ textarea {
 
 .gallery__modals-img-1 {
   min-width: 400px;
+  min-height: 500px;
   background-image: url('../img/gallery-mod-1-1920.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .gallery__modals-img-2 {
   min-width: 400px;
+  min-height: 500px;
   background-image: url('../img/gallery-mod-2-1920.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .gallery__modals-img-3 {
   min-width: 400px;
+  min-height: 500px;
   background-image: url('../img/gallery-mod-3-1920.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .gallery__modals-img-4 {
   min-width: 400px;
+  min-height: 500px;
   background-image: url('../img/gallery-mod-4-1920.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .gallery__modals-img-5 {
   min-width: 400px;
+  min-height: 500px;
   background-image: url('../img/gallery-mod-5-1920.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .gallery__modals-img-6 {
   min-width: 400px;
+  min-height: 500px;
   background-image: url('../img/gallery-mod-6-1920.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
 .gallery__modals-info {
-  min-height: 258px;
-  max-width: 402px;
+  justify-content: space-evenly;
+  flex-direction: column;
   padding: 4% 50px;
+}
+
+.gallery__modal-title {
+  margin-bottom: 20px;
 }
 
 .gallery__modals-autor {
@@ -1413,11 +1436,16 @@ textarea {
 }
 
 .gallery__modals-data {
-  margin-bottom: 41px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: var(--gray-darck);
+}
+
+.gallery__midal-text {
+  max-height: 300px;
+  justify-content: space-evenly;
+  overflow-y: auto;
 }
 
 .gallery__modals-descr {
@@ -2092,6 +2120,7 @@ textarea {
 }
 
 .projects__link {
+  display: inline-block;
   position: relative;
   margin-bottom: 43px;
   font-weight: 400;
@@ -2346,7 +2375,6 @@ textarea {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: var(--red);
 }
 
 /* Contacts social */

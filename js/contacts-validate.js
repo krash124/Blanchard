@@ -9,7 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Validate
 
-  const validation = new JustValidate('#contacts-validate');
+  const validation = new JustValidate('#contacts-validate', {
+    errorLabelStyle: {
+      color: 'var(--red)',
+      textDecoration: 'underlined',
+    },
+  });
+  
 
   validation
 

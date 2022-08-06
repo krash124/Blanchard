@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalWindow = document.querySelectorAll('.gallery__modals-window');
   const modalCloseBtn = document.querySelectorAll('.gallery-btn-exit');
 
+  // const $scrollableElement = document.querySelector('.gallery__modals-descr');
   
 
   btn.forEach(el => {
@@ -17,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       document.querySelector(`[data-target="${path}"]`).classList.add('gallery__modals-window--visible');
       modalOverlay.classList.add('gallery__modals-overlay--visible');
-      scrollLock.disablePageScroll();
+      // scrollLock.disablePageScroll();
+      document.body.style.overflow = 'hidden';
     });
   });
 
@@ -26,7 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
       modalOverlay.classList.remove('gallery__modals-overlay--visible');
       modalWindow.forEach(el => {
         el.classList.remove('gallery__modals-window--visible');
-        scrollLock.enablePageScroll();
+        // scrollLock.enablePageScroll();
+        document.body.style.overflow = 'auto';
       });
     };
   });
@@ -38,10 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       modalWindow.forEach(el => {
         el.classList.remove('gallery__modals-window--visible');
+        document.body.style.overflow = 'auto';
       });
 
       modalOverlay.classList.remove('gallery__modals-overlay--visible');
-      scrollLock.enablePageScroll();
+      // scrollLock.enablePageScroll();
     });
   });
 

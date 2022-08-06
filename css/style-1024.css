@@ -367,6 +367,43 @@
     width: 100%;
   }
 
+  /* Gallery modal */
+
+  .gallery__modals-window {
+    max-width: 594px;
+    max-height: 594px;
+  }
+
+  .gallery__modals-img-1 {
+    min-width: 264px;
+    min-height: 594px;
+  }
+  
+  .gallery__modals-img-2 {
+    min-width: 264px;
+    min-height: 594px;
+  }
+  
+  .gallery__modals-img-3 {
+    min-width: 264px;
+    min-height: 594px;
+  }
+  
+  .gallery__modals-img-4 {
+    min-width: 264px;
+    min-height: 594px;
+  }
+  
+  .gallery__modals-img-5 {
+    min-width: 264px;
+    min-height: 594px;
+  }
+  
+  .gallery__modals-img-6 {
+    min-width: 264px;
+    min-height: 594px;
+  }
+
   /* Catalog accordion  */
 
 .catalog__accordion-content {
