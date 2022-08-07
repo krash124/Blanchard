@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function init() {
     // Создание карты.
     var myMap = new ymaps.Map("map", {
-      center: [55.75846806898367,37.60108849999989],
+      center: [55.75913354267484,37.60104558465566],
       zoom: 15,
       controls: ['geolocationControl', 'zoomControl'],
     },

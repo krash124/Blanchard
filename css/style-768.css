@@ -55,7 +55,31 @@
     background-image: url("../img/hero-3-768.jpg");
   }
 
+  /* About */
+
+  .about__container {
+    padding-bottom: 69px;
+  }
+
   /* Gallery */ 
+
+  .gallery__container {
+    padding-top: 79px;
+    gap: 18px;
+  }
+
+  .gallery__title {
+    margin-bottom: 18px;
+  }
+
+  .gallery__gallery-filters {
+    min-height: 299px;
+  }
+
+  .choices {
+    width: 70%;
+    min-height: 40px;
+  }
   
   .choices__list.choices__list--dropdown {
     background-color: var(--black);
@@ -143,6 +167,12 @@
   .dev__location {
     margin-bottom: 1px;
     transform: translateX(13px);
+  }
+
+  /* Projects */
+
+  .projects__title {
+    margin-bottom: 19px;
   }
 
   /* Projects Tippy */

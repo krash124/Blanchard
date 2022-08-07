@@ -366,6 +366,7 @@ textarea {
   padding-top: 23px;
   padding-bottom: 22px;
   justify-content: space-between;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .header__menu {
@@ -913,7 +914,7 @@ textarea {
 
 .choices__inner {
   background-color: transparent;
-  padding: 0 0 15px 15px;
+  padding: 5px 0 15px 15px;
   border: 1px solid var(--white);
   border-radius: 6px;
   transition-property: background-color;
@@ -1121,7 +1122,6 @@ textarea {
 }
 
 .checkbox-gallery__input:hover~.checkbox-gallery__text::before,
-.checkbox-gallery__input:hover~.checkbox-gallery__text,
 .checkbox-gallery__input:focus-visible~.checkbox-gallery__text::before,
 .checkbox-gallery__input:focus-visible~.checkbox-gallery__text {
   color: var(--purple-light);
@@ -1465,7 +1465,7 @@ textarea {
 
 .catalog__container {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   background-color: var(--white);
 }
 
@@ -2122,7 +2122,6 @@ textarea {
 .projects__link {
   display: inline-block;
   position: relative;
-  margin-bottom: 43px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -2271,7 +2270,7 @@ textarea {
 
 .contacts__container {
   padding-top: 36px;
-  padding-bottom: 33px;
+  padding-bottom: 37px;
 }
 
 .contacts__flex {

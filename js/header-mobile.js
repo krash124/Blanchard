@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
           !nav.classList.contains(params.hiddenClass)
         ) {
           nav.classList.add(params.activeClass);
-          document.body.style.overflow = 'hidden';
+          document.body.style.overflow = 'auto';
           btn.setAttribute('aria-expanded', true);
         } else {
           nav.classList.add(params.hiddenClass);

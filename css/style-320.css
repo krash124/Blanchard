@@ -49,6 +49,10 @@
     height: 2px;
   }
 
+  .is-opened.header__top-burger::after {
+    width: 25px;
+  }
+
   /* Header search mobile */
 
   .header__mobile-form {
@@ -147,6 +151,10 @@
   .gallery__gallery-filters {
     width: 100%;
     min-height: 253px;
+  }
+
+  .choices {
+    width: 100%;
   }
 
   .choices__inner {
