@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/map-marker.svg",
+        iconImageHref: "img/map-marker.svg",
         iconImageSize: [20, 20],
         // iconImageOffset: [-20, -40],
         
