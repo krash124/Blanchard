@@ -31,13 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // iconImageOffset: [-20, -40],
         
       },
-      {
-        preset: "islands#yellowStretchyIcon",
-        // Отключаем кнопку закрытия балуна.
-        balloonCloseButton: false,
-         // Балун будем открывать и закрывать кликом по иконке метки.
-        hideIconOnBalloonOpen: false
-      }
     );
     myMap.geoObjects.add(myPlacemark);
     myMap.container.fitToViewport();
