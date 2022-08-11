@@ -359,19 +359,24 @@ textarea {
 /* Header Bottom */
 
 .header__bottom--color {
-  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .header__bottom-menu {
   padding-top: 23px;
   padding-bottom: 22px;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
 }
 
 .header__menu {
   width: 64.5%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .menu__item {
@@ -641,6 +646,7 @@ textarea {
 /* Search-form */
 
 .search-form {
+  max-height: 28px;
   flex-direction: row-reverse;
 }
 
@@ -2226,6 +2232,11 @@ textarea {
   cursor: not-allowed;
   box-shadow: none;
   background-color: var(--gray-ultralight);
+}
+
+.projects__swiper-prev.swiper-btn::before,
+.projects__swiper-next.swiper-btn::before {
+  color: var(--black);
 }
 
 .swiper-btn::before {

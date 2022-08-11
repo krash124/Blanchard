@@ -33,6 +33,11 @@
     width: 100%;
   }
 
+  .header__nav-container {
+    padding-left: 57px;
+  }
+
+
   /* Hero */
 
   .hero__container {
