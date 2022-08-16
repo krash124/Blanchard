@@ -129,15 +129,15 @@
   .hero__slide-1 {
     background-image: url("../img/hero-1-320.jpg");
   }
-  
+
   .hero__slide-2 {
     background-image: url("../img/hero-2-320.jpg");
   }
-  
+
   .hero__slide-3 {
     background-image: url("../img/hero-3-320.jpg");
   }
-  
+
   /* About */
 
   .about__container {
@@ -192,7 +192,7 @@
   }
 
   /* Gallery Swiper */
-  
+
 
   .gallery__rigth {
     min-width: 290px;
@@ -212,41 +212,47 @@
 
   .gallery__modals-window {
     max-width: 290px;
-    max-height: 100%;
     flex-direction: column;
-    overflow-y: auto;
+  }
+
+  .gallery__modals-content {
+    flex-direction: column;
+  }
+
+  .gallery__modals-info {
+    padding: 0;
   }
 
   .gallery__modals-img-1 {
-    min-width: 290px;
+    min-width: 250px;
     min-height: 360px;
   }
-  
+
   .gallery__modals-img-2 {
-    min-width: 290px;
+    min-width: 250px;
     min-height: 360px;
   }
-  
+
   .gallery__modals-img-3 {
-    min-width: 290px;
+    min-width: 250px;
     min-height: 360px;
   }
-  
+
   .gallery__modals-img-4 {
-    min-width: 290px;
+    min-width: 250px;
     min-height: 360px;
   }
-  
+
   .gallery__modals-img-5 {
-    min-width: 290px;
+    min-width: 250px;
     min-height: 360px;
   }
-  
+
   .gallery__modals-img-6 {
-    min-width: 290px;
+    min-width: 250px;
     min-height: 360px;
   }
-  
+
 
   /* Catalog */
 
@@ -466,12 +472,11 @@
     flex-direction: column-reverse;
     gap: 17px;
   }
-  
+
   .footer__icon-svg {
     width: 50px;
     height: 50px;
   }
 
-  
-}
 
+}

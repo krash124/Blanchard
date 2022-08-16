@@ -1,62 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  setBurger ({
-    btnClass: "header__top-burger",
-    navClass: "header__nav-container",
-    activeClass: "is-opened",
-    hiddenClass: "is-closed",
-    itemClass: "nav__item-link"
+  // Burger
+
+  const burger = document.querySelector('.burger');
+  const overlay = document.querySelector('.header__nav-container');
+  const navLinck = document.querySelectorAll('.nav__item-link');
+  const lockScroll = document.body;
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('is-opened');
+    overlay.classList.toggle('is-opened');
+    lockScroll.classList.toggle('lock')
   });
 
-  function setBurger(params) {
-    const btn = document.querySelector(`.${params.btnClass}`);
-    const nav = document.querySelector(`.${params.navClass}`);
-    const item = nav.querySelectorAll(`.${params.itemClass}`)
-    
-    btn.setAttribute('aria-expanded', false);
-  
-    nav.addEventListener("animationend", function () {
-      if (this.classList.contains(params.hiddenClass)) {
-        this.classList.remove(params.activeClass);
-        this.classList.remove(params.hiddenClass);
-      }
-    });
-  
-    btn.addEventListener("click", function () {
-      this.classList.toggle(params.activeClass);
-  
-      if (
-        !nav.classList.contains(params.activeClass) &&
-        !nav.classList.contains(params.hiddenClass)
-      ) {
-        nav.classList.add(params.activeClass);
-        document.body.style.overflow = 'hidden';
-        btn.setAttribute('aria-expanded', true);
-      } else {
-        nav.classList.add(params.hiddenClass);
-        document.body.removeAttribute('style');
-        btn.setAttribute('aria-expanded', false);
-      }
-    });
+  navLinck.forEach(function(event) {
+    event.addEventListener('click', function() {
+      burger.classList.remove('is-opened');
+      overlay.classList.remove('is-opened');
+      lockScroll.classList.remove('lock')
+    })
+  })
 
-    item.forEach((link) => {
-      link.addEventListener('click', function () {
-        if (
-          !nav.classList.contains(params.activeClass) &&
-          !nav.classList.contains(params.hiddenClass)
-        ) {
-          nav.classList.add(params.activeClass);
-          document.body.style.overflow = 'auto';
-          btn.setAttribute('aria-expanded', true);
-        } else {
-          nav.classList.add(params.hiddenClass);
-          document.body.removeAttribute('style');
-          btn.setAttribute('aria-expanded', false);
-          btn.classList.toggle(params.activeClass);
-        }
-      })
-    });
-  }
+
+  // Search
 
   setSearch ({
     openBtnClass: "header__btn-mobile",

@@ -51,11 +51,11 @@
   .hero__slide-1 {
     background-image: url("../img/hero-1-768.jpg");
   }
-  
+
   .hero__slide-2 {
     background-image: url("../img/hero-2-768.jpg");
   }
-  
+
   .hero__slide-3 {
     background-image: url("../img/hero-3-768.jpg");
   }
@@ -66,7 +66,7 @@
     padding-bottom: 69px;
   }
 
-  /* Gallery */ 
+  /* Gallery */
 
   .gallery__container {
     padding-top: 79px;
@@ -85,47 +85,46 @@
     width: 70%;
     min-height: 40px;
   }
-  
+
   .choices__list.choices__list--dropdown {
     background-color: var(--black);
   }
 
-    /* Gallery modal */
+  /* Gallery modal */
 
-    .gallery__modals-window {
-      max-width: 668px;
-      max-height: 594px;
-    }
-  
-    .gallery__modals-img-1 {
-      min-width: 301px;
-      min-height: 594px;
-    }
-    
-    .gallery__modals-img-2 {
-      min-width: 301px;
-      min-height: 594px;
-    }
-    
-    .gallery__modals-img-3 {
-      min-width: 301px;
-      min-height: 594px;
-    }
-    
-    .gallery__modals-img-4 {
-      min-width: 301px;
-      min-height: 594px;
-    }
-    
-    .gallery__modals-img-5 {
-      min-width: 301px;
-      min-height: 594px;
-    }
-    
-    .gallery__modals-img-6 {
-      min-width: 301px;
-      min-height: 594px;
-    }
+  .gallery__modals-window {
+    max-width: 668px;
+  }
+
+  .gallery__modals-img-1 {
+    min-width: 301px;
+    min-height: 594px;
+  }
+
+  .gallery__modals-img-2 {
+    min-width: 301px;
+    min-height: 594px;
+  }
+
+  .gallery__modals-img-3 {
+    min-width: 301px;
+    min-height: 594px;
+  }
+
+  .gallery__modals-img-4 {
+    min-width: 301px;
+    min-height: 594px;
+  }
+
+  .gallery__modals-img-5 {
+    min-width: 301px;
+    min-height: 594px;
+  }
+
+  .gallery__modals-img-6 {
+    min-width: 301px;
+    min-height: 594px;
+  }
 
 
   /* Catalog */

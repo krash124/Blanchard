@@ -21,7 +21,7 @@
     --red: #D11616;
   }
 
-  
+
 
   /* Header */
 
@@ -39,12 +39,12 @@
     border: none;
     cursor: pointer;
     z-index: 3;
-    transition-property:outline, background-color, transform, transform-origin;
+    transition-property: outline, background-color, transform, transform-origin;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
     background-color: transparent;
   }
-  
+
   .header__top-burger::before {
     position: absolute;
     content: "";
@@ -57,7 +57,7 @@
     transition-timing-function: ease-in-out;
     background-color: var(--white);
   }
-  
+
   .header__top-burger::after {
     position: absolute;
     content: "";
@@ -70,7 +70,7 @@
     transition-timing-function: ease-in-out;
     background-color: var(--white);
   }
-  
+
   .burger__line {
     position: absolute;
     display: block;
@@ -83,13 +83,13 @@
     transition-timing-function: ease-in-out;
     background-color: var(--white);
   }
-  
+
   .header__top-burger:hover::before,
   .header__top-burger:hover::after,
-  .header__top-burger:hover .burger__line{
+  .header__top-burger:hover .burger__line {
     background-color: var(--purple-light);
   }
-  
+
   .header__top-burger:focus-visible {
     outline-color: var(--purple-light);
   }
@@ -102,7 +102,7 @@
 
   .is-opened.header__top-burger::after {
     width: 36px;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%) rotate(45deg);
   }
 
@@ -116,7 +116,7 @@
   }
 
   /* Mobile nav */
-  
+
   .header__nav-container {
     position: fixed;
     width: 100%;
@@ -147,6 +147,7 @@
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -156,6 +157,7 @@
     from {
       opacity: 1;
     }
+
     to {
       opacity: 0;
     }
@@ -167,7 +169,7 @@
     justify-content: flex-start;
     overflow-y: auto;
   }
-  
+
   .nav__lists {
     flex-direction: column;
   }
@@ -211,32 +213,32 @@
 
   /* Search mobile */
 
-  
+
   .header__btn-mobile {
     display: block;
     cursor: pointer;
     background-color: transparent;
   }
-  
+
   .header__btn-mobile rect,
   .header__btn-mobile path {
     transition-property: fill;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
   }
-  
+
   .header__btn-mobile:hover rect,
   .header__btn-mobile:hover path {
     fill: var(--purple-light);
   }
-  
+
   .header__btn-mobile:active rect,
   .header__btn-mobile:active path {
     fill: var(--purple-darck);
   }
 
   .header__mobile-form {
-    position: fixed;
+    position: absolute;
     display: none;
     top: 33px;
     right: 42px;
@@ -263,17 +265,19 @@
       transform: scaleX(0);
       opacity: 0;
     }
+
     to {
       transform: scaleX(1);
       opacity: 1;
     }
   }
-  
+
   @keyframes search-close {
     from {
       transform: scaleX(1);
       opacity: 1;
     }
+
     to {
       transform: scaleX(0);
       opacity: 0;
@@ -323,7 +327,7 @@
 
   .hero__container {
     padding-bottom: 14px;
-}
+  }
 
   .hero__block {
     max-width: 656px;
@@ -342,11 +346,11 @@
   .hero__slide-1 {
     background-image: url("../img/hero-1-1024.jpg");
   }
-  
+
   .hero__slide-2 {
     background-image: url("../img/hero-2-1024.jpg");
   }
-  
+
   .hero__slide-3 {
     background-image: url("../img/hero-3-1024.jpg");
   }
@@ -371,34 +375,33 @@
 
   .gallery__modals-window {
     max-width: 594px;
-    max-height: 594px;
   }
 
   .gallery__modals-img-1 {
     min-width: 264px;
     min-height: 594px;
   }
-  
+
   .gallery__modals-img-2 {
     min-width: 264px;
     min-height: 594px;
   }
-  
+
   .gallery__modals-img-3 {
     min-width: 264px;
     min-height: 594px;
   }
-  
+
   .gallery__modals-img-4 {
     min-width: 264px;
     min-height: 594px;
   }
-  
+
   .gallery__modals-img-5 {
     min-width: 264px;
     min-height: 594px;
   }
-  
+
   .gallery__modals-img-6 {
     min-width: 264px;
     min-height: 594px;
@@ -406,9 +409,9 @@
 
   /* Catalog accordion  */
 
-.catalog__accordion-content {
-  padding-right: 0;
-}
+  .catalog__accordion-content {
+    padding-right: 0;
+  }
 
   .catalog__accordion-list {
     column-gap: 45px;
@@ -514,6 +517,6 @@
     width: 60px;
     height: 60px;
   }
-  
+
 
 }

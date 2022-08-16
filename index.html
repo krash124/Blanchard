@@ -11,24 +11,23 @@
   <link rel="stylesheet" href="css/simplebar.css">
   <link rel="stylesheet" href="css/swiper-min.css">
   <link rel="stylesheet" href="css/choices.min.css">
-  <!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
-  <!-- <link rel="stylesheet" href="css/accordion.min.css"> -->
+  <link rel="stylesheet" href="css/graph-modal.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-1024.css">
   <link rel="stylesheet" href="css/style-768.css">
   <link rel="stylesheet" href="css/style-320.css">
 
-  <script src="js/simplebar.js" defer></script>
-  <script src="js/swiper-min.js" defer></script>
-  <script src="js/choices.min.js" defer></script>
-  <script src="js/scroll-lock.min.js" defer></script>
-  <!-- <script src="js/jquery-ui.min.js" defer></script> -->
-  <script src="js/accordion.min.js" defer></script>
-  <script src="js/tippy-1.js" defer></script>
-  <script src="js/tippy-2.js" defer></script>
-  <script src="js/just-validate.js" defer></script>
-  <script src="js/inputmask.min.js" defer></script>
+  <script src="librarys/simplebar.js" defer></script>
+  <script src="librarys/swiper-min.js" defer></script>
+  <script src="librarys/choices.min.js" defer></script>
+  <script src="librarys/scroll-lock.min.js" defer></script>
+  <script src="librarys/accordion.min.js" defer></script>
+  <script src="librarys/tippy-1.js" defer></script>
+  <script src="librarys/tippy-2.js" defer></script>
+  <script src="librarys/just-validate.js" defer></script>
+  <script src="librarys/inputmask.min.js" defer></script>
+  <script src="librarys/graph-modal.min.js" defer></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 
 
@@ -39,7 +38,6 @@
   <script src="js/swiper-hero.js" defer></script>
   <script src="js/swiper-gallery.js" defer></script>
   <script src="js/gallery-modal.js" defer></script>
-  <!-- <script src="js/modal-simplbar.js" defer></script> -->
   <script src="js/catalog-accordion-&-tubs.js" defer></script>
   <script src="js/swiper-development.js" defer></script>
   <script src="js/projects-tippy.js" defer></script>
@@ -60,7 +58,7 @@
 
     <div class="header__top header__top--color">
 
-      
+
       <div class="header__top-nav flex container">
 
         <button class="header__top-burger burger" aria-label="Кнопка бургер меню">
@@ -75,17 +73,24 @@
 
         <!-- Search mobile -->
 
-        <button class="header__btn-mobile background-link" aria-label="Кнопка поиска"  type="button">
-          <svg class="header__search-svg" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79501 20.8721 2.79501 13.5104C2.79501 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
-            </svg>
+        <button class="header__btn-mobile background-link" aria-label="Кнопка поиска" type="button">
+          <svg class="header__search-svg" width="30" height="29" viewBox="0 0 30 29" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="9.15446" height="2.28862"
+              transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79501 20.8721 2.79501 13.5104C2.79501 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
+              fill="white" />
+          </svg>
         </button>
         <form class="header__mobile-form mobile-form">
           <div class="mobile-form__drop-input search-form flex">
-            <input class="search-form__input search-form__input-mobile" aria-label="Введите текст поиска" type="text" placeholder="">
-            <button class="search-form__btn search-form__btn-mobile background-link" aria-label="Кнопка поиска" type="button">
-              <svg class="search-form__btn-svg" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <input class="search-form__input search-form__input-mobile" aria-label="Введите текст поиска" type="text"
+              placeholder="">
+            <button class="search-form__btn search-form__btn-mobile background-link" aria-label="Кнопка поиска"
+              type="button">
+              <svg class="search-form__btn-svg" width="23" height="22" viewBox="0 0 23 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <rect width="6.8678" height="1.71695"
                   transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -95,13 +100,15 @@
             </button>
             <button class="mobile-form__btn-close background-link" aria-label="Кнопка закрытия поиска" type="button">
               <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)" fill="white"/>
-                <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)" fill="white"/>
-                </svg>                
+                <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)"
+                  fill="white" />
+                <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)"
+                  fill="white" />
+              </svg>
             </button>
           </div>
         </form>
-        
+
         <!-- Nav container -->
 
         <div class="header__nav-container flex">
@@ -127,7 +134,7 @@
               </li>
             </ul>
           </nav>
-  
+
           <div class="header__enter">
             <a class="header__enter-link flex background-link" aria-label="Формы входа на сайт" href="#">
               <span class="header__enter-img flex">
@@ -141,7 +148,7 @@
               <span class="header__enter-text">Войти</span>
             </a>
           </div>
-  
+
         </div>
 
       </div>
@@ -320,7 +327,7 @@
           <h2 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
           <p class="hero__descr">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых
             заданий создаёт предпосылки для&nbsp;новых предложений.</p>
-          <a class="hero__btn border-btn" href="#contacts" >Подписаться на рассылку</a>
+          <a class="hero__btn border-btn" href="#contacts">Подписаться на рассылку</a>
         </div>
 
       </div>
@@ -334,10 +341,12 @@
         <div class="about__block">
           <h2 class="about__title">О нас</h2>
           <p class="about__descr">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
-            однозначно определяет каждого участника как&nbsp;способного принимать собственные решения касаемо распределения
+            однозначно определяет каждого участника как&nbsp;способного принимать собственные решения касаемо
+            распределения
             внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что&nbsp;высококачественный прототип
             будущего проекта влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная
-            практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный 
+            практика показывает, что высокое качество позиционных исследований создаёт необходимость включения
+            в&nbsp;производственный
             план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних
             резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей
             оппозиции набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
@@ -372,7 +381,7 @@
                 <input class="checkbox-gallery__input" type="checkbox" aria-label="Фильтр 19 век">
                 <span class="checkbox-gallery__text">XIX век</span>
               </label>
-              <label class="checkbox-gallery__label" >
+              <label class="checkbox-gallery__label">
                 <input class="checkbox-gallery__input check-input" type="checkbox" aria-label="Фильтр 20 век">
                 <span class="checkbox-gallery__text">XX век</span>
               </label>
@@ -391,16 +400,19 @@
         <div class="gallery__rigth">
 
           <div class="gallery__swiper-pagination swiper-pagination flex">
-            <button class="gallery__swiper-prev gallery__btn-style swiper-btn swiper-btn-prev" aria-label="Кнопка пролистывания слайдера вперёд"></button>
+            <button class="gallery__swiper-prev gallery__btn-style swiper-btn swiper-btn-prev"
+              aria-label="Кнопка пролистывания слайдера вперёд"></button>
             <div class="gallery__swiper-number"></div>
-            <button class="gallery__swiper-next gallery__btn-style swiper-btn swiper-btn-next" aria-label="Кнопка пролистывания слайдера назад"></button>
+            <button class="gallery__swiper-next gallery__btn-style swiper-btn swiper-btn-next"
+              aria-label="Кнопка пролистывания слайдера назад"></button>
           </div>
 
           <div class="gallery__swiper-container">
             <div class="gallery__swiper swiper">
 
               <div class="gallery__wrapper swiper-wrapper">
-                <button class="gallery__slide swiper-slide" data-path="slide-1" aria-label="Открытия модального окна Торс (Фигура с розовым лицом)">
+                <button class="gallery__slide swiper-slide" data-graph-path="slide-1"
+                  aria-label="Открытия модального окна Торс (Фигура с розовым лицом)">
                   <picture>
                     <source media="(min-width:1200px)" srcset="img/gallery-1-1920.jpg">
                     <source media="(min-width:900px)" srcset="img/gallery-1-1024.jpg">
@@ -408,7 +420,8 @@
                     <img class="gallery__slide-img" src="img/gallery-1-320.jpg" alt="Торс (Фигура с розовым лицом)">
                   </picture>
                 </button>
-                <button class="gallery__slide swiper-slide" data-path="slide-2" aria-label="Открытия модального окна Женщина с граблями">
+                <button class="gallery__slide swiper-slide" data-graph-path="slide-2"
+                  aria-label="Открытия модального окна Женщина с граблями">
                   <picture>
                     <source media="(min-width:1200px)" srcset="img/gallery-2-1920.jpg">
                     <source media="(min-width:900px)" srcset="img/gallery-2-1024.jpg">
@@ -416,7 +429,8 @@
                     <img class="gallery__slide-img" src="img/gallery-2-320.jpg" alt="Женщина с граблями">
                   </picture>
                 </button>
-                <button class="gallery__slide swiper-slide" data-path="slide-3" aria-label="Открытия модального окна Уборка ржи">
+                <button class="gallery__slide swiper-slide" data-graph-path="slide-3"
+                  aria-label="Открытия модального окна Уборка ржи">
                   <picture>
                     <source media="(min-width:1200px)" srcset="img/gallery-3-1920.jpg">
                     <source media="(min-width:900px)" srcset="img/gallery-3-1024.jpg">
@@ -424,7 +438,8 @@
                     <img class="gallery__slide-img" src="img/gallery-3-320.jpg" alt="Уборка ржи">
                   </picture>
                 </button>
-                <button class="gallery__slide swiper-slide" data-path="slide-4" aria-label="Открытия модального окна Супрематизм">
+                <button class="gallery__slide swiper-slide" data-graph-path="slide-4"
+                  aria-label="Открытия модального окна Супрематизм">
                   <picture>
                     <source media="(min-width:1200px)" srcset="img/gallery-4-1920.jpg">
                     <source media="(min-width:900px)" srcset="img/gallery-4-1024.jpg">
@@ -432,7 +447,8 @@
                     <img class="gallery__slide-img" src="img/gallery-4-320.jpg" alt="Супрематизм">
                   </picture>
                 </button>
-                <button class="gallery__slide swiper-slide" data-path="slide-5" aria-label="Открытия модального окна Женщина с вёдрами">
+                <button class="gallery__slide swiper-slide" data-graph-path="slide-5"
+                  aria-label="Открытия модального окна Женщина с вёдрами">
                   <picture>
                     <source media="(min-width:1200px)" srcset="img/gallery-5-1920.jpg">
                     <source media="(min-width:900px)" srcset="img/gallery-5-1024.jpg">
@@ -440,7 +456,8 @@
                     <img class="gallery__slide-img" src="img/gallery-5-320.jpg" alt="Женщина с вёдрами">
                   </picture>
                 </button>
-                <button class="gallery__slide swiper-slide" data-path="slide-6" aria-label="Открытия модального окна Супрематизм">
+                <button class="gallery__slide swiper-slide" data-graph-path="slide-6"
+                  aria-label="Открытия модального окна Супрематизм">
                   <picture>
                     <source media="(min-width:1200px)" srcset="img/gallery-6-1920.jpg">
                     <source media="(min-width:900px)" srcset="img/gallery-6-1024.jpg">
@@ -449,7 +466,7 @@
                   </picture>
                 </button>
               </div>
-  
+
             </div>
           </div>
 
@@ -457,129 +474,141 @@
 
         <!-- Gallery Modals -->
 
-        
-          <div class="gallery__modals-overlay flex">
-            <div class="gallery__simplebar">
-              <div class="gallery__modals-window flex" data-target="slide-1">
-                <button class="gallery__modals-btn gallery-btn-exit" aria-label="Закрыть модальное окно"></button>
-                <div class="gallery__modals-img-1"></div>
-                <div class="gallery__modals-info flex">
-                  <div class="gallery__modal-title">
-                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                    <h3 class="gallery__modals-name">"Торс (Фигура с розовым лицом)"</h3>
-                    <p class="gallery__modals-data">1928–1929</p>
-                  </div>
-                  <div class="gallery__midal-text">
-                    <p class="gallery__modals-descr">Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные
-                      работы сам художник), зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли
-                      К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах вымышленного художником Космоса,
-                      в&nbsp;пространстве без времени. Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой
-                      архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном.
-                      Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит
-                      о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который
-                      и&nbsp;становится для Малевича средоточием некоего абсолюта.</p>
-                  </div>
+
+        <div class="gallery__modals-overlay  graph-modal">
+          <div class="gallery__modals-window graph-modal__container" data-graph-target="slide-1" role="dialog"
+            aria-modal="true">
+            <button class="gallery__modals-btn gallery-btn-exit btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="gallery__modals-content graph-modal__content flex">
+              <div class="gallery__modals-img-1"></div>
+              <div class="gallery__modals-info flex">
+                <div class="gallery__modal-title">
+                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"Торс (Фигура с розовым лицом)"</h3>
+                  <p class="gallery__modals-data">1928–1929</p>
+                </div>
+                <div class="gallery__midal-text">
+                  <p class="gallery__modals-descr">Эти странные безликие &laquo;полуобразы&raquo; (так называл подобные
+                    работы сам художник), зашифрованные в&nbsp;женских фигурах и&nbsp;торсах, существуют по&nbsp;мысли
+                    К.Малевича, в&nbsp;параллельном мире, в&nbsp;пределах вымышленного художником Космоса,
+                    в&nbsp;пространстве без времени. Произведение вызывает ассоциации и&nbsp;с&nbsp;пластикой
+                    архаической скульптуры, и&nbsp;с&nbsp;деревянной игрушкой, и&nbsp;с&nbsp;модернистским манекеном.
+                    Присутствие в&nbsp;фигуре белого цвета, дающего реальное представление о&nbsp;бесконечности, говорит
+                    о&nbsp;том, что в&nbsp;данном случае бесконечность заключена в&nbsp;самом человеке, который
+                    и&nbsp;становится для Малевича средоточием некоего абсолюта.</p>
                 </div>
               </div>
             </div>
-            <div class="gallery__simplebar">
-              <div class="gallery__modals-window flex" data-target="slide-2">
-                <button class="gallery__modals-btn gallery-btn-exit" aria-label="Закрыть модальное окно"></button>
-                <div class="gallery__modals-img-2"></div>
-                <div class="gallery__modals-info flex">
-                  <div class="gallery__modal-title">
-                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                    <h3 class="gallery__modals-name">"Женщина с граблями"</h3>
-                    <p class="gallery__modals-data">1931-1932</p>
-                  </div>
-                  <div class="gallery__midal-text">
-                    <p class="gallery__modals-descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира
-                      Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как
-                      первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
-                  </div>
+
+          </div>
+          <div class="gallery__modals-window  graph-modal__container" data-graph-target="slide-2" role="dialog"
+            aria-modal="true">
+            <button class="gallery__modals-btn gallery-btn-exit btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="gallery__modals-content graph-modal__content flex">
+              <div class="gallery__modals-img-2"></div>
+              <div class="gallery__modals-info flex">
+                <div class="gallery__modal-title">
+                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"Женщина с граблями"</h3>
+                  <p class="gallery__modals-data">1931-1932</p>
+                </div>
+                <div class="gallery__midal-text">
+                  <p class="gallery__modals-descr">Картина из&nbsp;второй серии крестьянского цикла работ Казимира
+                    Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930-1931&nbsp;годах, после того, как
+                    первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
                 </div>
               </div>
             </div>
-            <div class="gallery__simplebar">
-              <div class="gallery__modals-window flex" data-target="slide-3">
-                <button class="gallery__modals-btn gallery-btn-exit" aria-label="Закрыть модальное окно"></button>
-                <div class="gallery__modals-img-3"></div>
-                <div class="gallery__modals-info flex">
-                  <div class="gallery__modal-title">
-                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                    <h3 class="gallery__modals-name">"Уборка ржи"</h3>
-                    <p class="gallery__modals-data">1912</p>
-                  </div>
-                  <div class="gallery__midal-text">
-                    <p class="gallery__modals-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
-                      porro accusantium dolorem dolor incidunt provident, veniam repellat consequuntur earum est
-                      voluptatibus vitae non, quia impedit ipsam nisi. Quisquam, illo provident.</p>
-                  </div>
+
+          </div>
+          <div class="gallery__modals-window  graph-modal__container" data-graph-target="slide-3" role="dialog"
+            aria-modal="true">
+            <button class="gallery__modals-btn gallery-btn-exit btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="gallery__modals-content graph-modal__content flex">
+              <div class="gallery__modals-img-3"></div>
+              <div class="gallery__modals-info flex">
+                <div class="gallery__modal-title">
+                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"Уборка ржи"</h3>
+                  <p class="gallery__modals-data">1912</p>
+                </div>
+                <div class="gallery__midal-text">
+                  <p class="gallery__modals-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+                    porro accusantium dolorem dolor incidunt provident, veniam repellat consequuntur earum est
+                    voluptatibus vitae non, quia impedit ipsam nisi. Quisquam, illo provident.</p>
                 </div>
               </div>
             </div>
-            <div class="gallery__simplebar">
-              <div class="gallery__modals-window flex" data-target="slide-4">
-                <button class="gallery__modals-btn gallery-btn-exit" aria-label="Закрыть модальное окно"></button>
-                <div class="gallery__modals-img-4"></div>
-                <div class="gallery__modals-info flex">
-                  <div class="gallery__modal-title">
-                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                    <h3 class="gallery__modals-name">"Супрематизм"</h3>
-                    <p class="gallery__modals-data">999-999</p>
-                  </div>
-                  <div class="gallery__midal-text">
-                    <p class="gallery__modals-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-                      pariatur, perspiciatis tempore excepturi, sapiente ab quidem dolorum, alias delectus ipsum
-                      asperiores fuga eum omnis laboriosam? Quia odit odio cum sint.</p>
-                  </div>
+
+          </div>
+          <div class="gallery__modals-window  graph-modal__container" data-graph-target="slide-4" role="dialog"
+            aria-modal="true">
+            <button class="gallery__modals-btn gallery-btn-exit btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="gallery__modals-content graph-modal__content flex">
+              <div class="gallery__modals-img-4"></div>
+              <div class="gallery__modals-info flex">
+                <div class="gallery__modal-title">
+                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"Супрематизм"</h3>
+                  <p class="gallery__modals-data">999-999</p>
+                </div>
+                <div class="gallery__midal-text">
+                  <p class="gallery__modals-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+                    pariatur, perspiciatis tempore excepturi, sapiente ab quidem dolorum, alias delectus ipsum
+                    asperiores fuga eum omnis laboriosam? Quia odit odio cum sint.</p>
                 </div>
               </div>
             </div>
-            <div class="gallery__simplebar">
-              <div class="gallery__modals-window flex" data-target="slide-5">
-                <button class="gallery__modals-btn gallery-btn-exit" aria-label="Закрыть модальное окно"></button>
-                <div class="gallery__modals-img-5"></div>
-                <div class="gallery__modals-info flex">
-                  <div class="gallery__modal-title">
-                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                    <h3 class="gallery__modals-name">"Женщина с вёдрами"</h3>
-                    <p class="gallery__modals-data">1912</p>
-                  </div>
-                  <div class="gallery__midal-text">
-                    <p class="gallery__modals-descr">&laquo;Женщина с&nbsp;вёдрами&raquo; Казимира Малевича&nbsp;&mdash;
-                      яркое произведение авангардного искусства, написанное в&nbsp;1912&nbsp;году. Ныне картина хранится
-                      в&nbsp;коллекции нью-йоркского Музея современного искусства.
-  
-                      Идеи супрематизма были навеяны работами Фернана Леже, а&nbsp;ранее и&nbsp;Поля Сезанна, который
-                      считал, что все формы в&nbsp;природе могут быть сведены к&nbsp;сфере, цилиндру и&nbsp;конусу.
-                      Однако, Малевич более решительно продвинулся к&nbsp;абстракции, рассекая фигуру и&nbsp;плоскость
-                      изображения в&nbsp;различные взаимосвязанные геометрические формы. Он&nbsp;утверждал, что сам
-                      по&nbsp;себе супрематизм приведет к&nbsp;&laquo;превосходству чистого чувства и&nbsp;восприятия
-                      в&nbsp;изобразительном искусстве&raquo;.</p>
-                  </div>
+
+          </div>
+          <div class="gallery__modals-window  graph-modal__container" data-graph-target="slide-5" role="dialog"
+            aria-modal="true">
+            <button class="gallery__modals-btn gallery-btn-exit btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="gallery__modals-content graph-modal__content flex">
+              <div class="gallery__modals-img-5"></div>
+              <div class="gallery__modals-info flex">
+                <div class="gallery__modal-title">
+                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"Женщина с вёдрами"</h3>
+                  <p class="gallery__modals-data">1912</p>
+                </div>
+                <div class="gallery__midal-text">
+                  <p class="gallery__modals-descr">&laquo;Женщина с&nbsp;вёдрами&raquo; Казимира Малевича&nbsp;&mdash;
+                    яркое произведение авангардного искусства, написанное в&nbsp;1912&nbsp;году. Ныне картина хранится
+                    в&nbsp;коллекции нью-йоркского Музея современного искусства.
+
+                    Идеи супрематизма были навеяны работами Фернана Леже, а&nbsp;ранее и&nbsp;Поля Сезанна, который
+                    считал, что все формы в&nbsp;природе могут быть сведены к&nbsp;сфере, цилиндру и&nbsp;конусу.
+                    Однако, Малевич более решительно продвинулся к&nbsp;абстракции, рассекая фигуру и&nbsp;плоскость
+                    изображения в&nbsp;различные взаимосвязанные геометрические формы. Он&nbsp;утверждал, что сам
+                    по&nbsp;себе супрематизм приведет к&nbsp;&laquo;превосходству чистого чувства и&nbsp;восприятия
+                    в&nbsp;изобразительном искусстве&raquo;.</p>
                 </div>
               </div>
             </div>
-            <div class="gallery__simplebar">
-              <div class="gallery__modals-window flex" data-target="slide-6">
-                <button class="gallery__modals-btn gallery-btn-exit" aria-label="Закрыть модальное окно"></button>
-                <div class="gallery__modals-img-6"></div>
-                <div class="gallery__modals-info flex">
-                  <div class="gallery__modal-title">
-                    <h2 class="gallery__modals-autor">Казимир Малевич</h2>
-                    <h3 class="gallery__modals-name">"Супрематизм"</h3>
-                    <p class="gallery__modals-data">1915–1916</p>
-                  </div>
-                  <div class="gallery__midal-text">
-                    <p class="gallery__modals-descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                      beatae quis sunt quisquam praesentium fugit, temporibus veniam, error natus delectus laborum ex
-                      perferendis voluptate exercitationem ab consectetur voluptatum! Nam, voluptate?</p>
-                  </div>
+
+          </div>
+          <div class="gallery__modals-window  graph-modal__container" data-graph-target="slide-6" role="dialog"
+            aria-modal="true">
+            <button class="gallery__modals-btn gallery-btn-exit btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+            <div class="gallery__modals-content graph-modal__content flex">
+              <div class="gallery__modals-img-6"></div>
+              <div class="gallery__modals-info flex">
+                <div class="gallery__modal-title">
+                  <h2 class="gallery__modals-autor">Казимир Малевич</h2>
+                  <h3 class="gallery__modals-name">"Супрематизм"</h3>
+                  <p class="gallery__modals-data">1915–1916</p>
+                </div>
+                <div class="gallery__midal-text">
+                  <p class="gallery__modals-descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                    beatae quis sunt quisquam praesentium fugit, temporibus veniam, error natus delectus laborum ex
+                    perferendis voluptate exercitationem ab consectetur voluptatum! Nam, voluptate?</p>
                 </div>
               </div>
             </div>
           </div>
+
+        </div>
 
 
       </div>
@@ -713,15 +742,17 @@
               </picture>
               <h3 class="catalog__tabs-name">Доменико Гирландайо</h3>
               <span class="catalog__tabs-date">
-                <time datetime="1448-06-02">2 июня 1448</time> 
+                <time datetime="1448-06-02">2 июня 1448</time>
                 <span>---</span>
                 <time datetime="1494-01-11">11 января 1494.</time>
               </span>
               <p class="catalog__tabs-descr">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель
-                художественной династии, которую продолжили его&nbsp;брат Давид и&nbsp;сын Ридольфо. Глава художественной
+                художественной династии, которую продолжили его&nbsp;брат Давид и&nbsp;сын Ридольфо. Глава
+                художественной
                 мастерской, где юный Микеланджело в&nbsp;течение года овладевал профессиональными навыками. Автор
                 фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь
-                библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того&nbsp;времени).</p>
+                библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах
+                того&nbsp;времени).</p>
             </div>
             <div class="catalog__tabs-content" data-catalog-target="13">
               <picture>
@@ -838,7 +869,8 @@
           <div class="catalog__accordion">
             <ul class="catalog__accordion-container accordion-js" id="accordion">
               <li class="catalog__accordion-years ac">
-                <button class="catalog__accordion-btn ac-trigger" aria-label="Открыть список художников C 1400 по 1499 гг">
+                <button class="catalog__accordion-btn ac-trigger"
+                  aria-label="Открыть список художников C 1400 по 1499 гг">
                   <span class="catalog__accordion-heading">
                     <span class="catalog__accordion-date">C 1400 по 1499 гг</span>
                   </span>
@@ -848,83 +880,101 @@
                   <div class="catalog__accordion-content">
                     <ul class="catalog__accordion-list" id="parent">
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="1">Бенедетто ди Биндо</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="1">Бенедетто ди
+                          Биндо</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="2">Бергоньоне, Амброджо</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="2">Бергоньоне,
+                          Амброджо</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="3">Биссоло, Франческо</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="3">Биссоло,
+                          Франческо</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="4">Больтраффио, Джованни</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="4">Больтраффио,
+                          Джованни</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="5">Бонсиньори, Франческо</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="5">Бонсиньори,
+                          Франческо</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="6">Боттичини, Рафаэлло</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="6">Боттичини,
+                          Рафаэлло</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="7">Брамантино</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="7">Брамантино</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="8">Бреа, Людовико</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="8">Бреа, Людовико</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="9">Бьяджо д’Антонио Туччи</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="9">Бьяджо д’Антонио
+                          Туччи</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="10">Веккьетта</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="10">Веккьетта</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="11">Андреа Верроккьо</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="11">Андреа
+                          Верроккьо</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name catalog__accordion-name--active"  href="#catalog-tabs" data-catalog-path="12">Доменико Гирландайо</a>
+                        <button class="catalog__accordion-name catalog__accordion-name--active" type="button"
+                          data-catalog-path="12">Доменико Гирландайо</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="13">Беноццо Гоццоли</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="13">Беноццо
+                          Гоццоли</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="14">Граначчи, Франческо</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="14">Граначчи,
+                          Франческо</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="15">Грегорио ди Чекко</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="15">Грегорио ди
+                          Чекко</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="16">Джованни да Удине</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="16">Джованни да
+                          Удине</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="17">Джованни ди Паоло</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="17">Джованни ди
+                          Паоло</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="18">Джорджоне</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="18">Джорджоне</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="19">Парентино, Бернардо</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="19">Парентино,
+                          Бернардо</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="20">Пезеллино</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="20">Пезеллино</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="21">Пьетро Перуджино</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="21">Пьетро
+                          Перуджино</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="22">Перуцци, Бальдассаре</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="22">Перуцци,
+                          Бальдассаре</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="23">Пизанелло</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="23">Пизанелло</button>
                       </li>
                       <li class="catalog__accordion-item">
-                        <a class="catalog__accordion-name" href="#catalog-tabs"  data-catalog-path="24">Пинтуриккьо</a>
+                        <button class="catalog__accordion-name" type="button" data-catalog-path="24">Пинтуриккьо</button>
                       </li>
                     </ul>
                   </div>
                 </div>
               </li>
               <li class="catalog__accordion-years ac">
-                <button class="catalog__accordion-btn ac-trigger" aria-label="Открыть список художников C 1500 по 1599 гг">
+                <button class="catalog__accordion-btn ac-trigger"
+                  aria-label="Открыть список художников C 1500 по 1599 гг">
                   <span class="catalog__accordion-heading">
                     <span class="catalog__accordion-date">C 1500 по 1599 гг</span>
                   </span>
@@ -944,7 +994,8 @@
                 </div>
               </li>
               <li class="catalog__accordion-years ac">
-                <button class="catalog__accordion-btn ac-trigger" aria-label="Открыть список художников C 1600 по 1699 гг">
+                <button class="catalog__accordion-btn ac-trigger"
+                  aria-label="Открыть список художников C 1600 по 1699 гг">
                   <span class="catalog__accordion-heading">
                     <span class="catalog__accordion-date">C 1600 по 1699 гг</span>
                   </span>
@@ -964,7 +1015,8 @@
                 </div>
               </li>
               <li class="catalog__accordion-years ac">
-                <button class="catalog__accordion-btn ac-trigger" aria-label="Открыть список художников C 1700 по 1799 гг">
+                <button class="catalog__accordion-btn ac-trigger"
+                  aria-label="Открыть список художников C 1700 по 1799 гг">
                   <span class="catalog__accordion-heading">
                     <span class="catalog__accordion-date">C 1700 по 1799 гг</span>
                   </span>
@@ -984,7 +1036,8 @@
                 </div>
               </li>
               <li class="catalog__accordion-years ac">
-                <button class="catalog__accordion-btn ac-trigger" aria-label="Открвть список художников C 1800 по 1899 гг">
+                <button class="catalog__accordion-btn ac-trigger"
+                  aria-label="Открвть список художников C 1800 по 1899 гг">
                   <span class="catalog__accordion-heading">
                     <span class="catalog__accordion-date">C 1800 по 1899 гг</span>
                   </span>
@@ -1004,7 +1057,8 @@
                 </div>
               </li>
               <li class="catalog__accordion-years ac">
-                <button class="catalog__accordion-btn ac-trigger" aria-label="Открыть список художников C 1900 по 1999 гг">
+                <button class="catalog__accordion-btn ac-trigger"
+                  aria-label="Открыть список художников C 1900 по 1999 гг">
                   <span class="catalog__accordion-heading">
                     <span class="catalog__accordion-date">C 1900 по 1999 гг</span>
                   </span>
@@ -1057,7 +1111,7 @@
 
         <h2 class="dev__title">События</h2>
 
-        
+
 
         <button class="dev__swiper-prev dev__btn-style swiper-btn swiper-btn-prev"></button>
 
@@ -1224,10 +1278,12 @@
 
 
           <div class="projects__btns">
-            <button class="projects__swiper-prev projects__btn-style swiper-btn swiper-btn-prev" aria-label="Кнопка прокрутки слайдера назад"></button>
-            <button class="projects__swiper-next projects__btn-style swiper-btn swiper-btn-next" aria-label="Кнопка прокрутки слайдера вперёд"></button>
+            <button class="projects__swiper-prev projects__btn-style swiper-btn swiper-btn-prev"
+              aria-label="Кнопка прокрутки слайдера назад"></button>
+            <button class="projects__swiper-next projects__btn-style swiper-btn swiper-btn-next"
+              aria-label="Кнопка прокрутки слайдера вперёд"></button>
           </div>
-          
+
           <div class="projects__swiper swiper">
             <div class="projects__wrapper swiper-wrapper">
               <button class="projects__slide swiper-slide flex">
@@ -1243,7 +1299,8 @@
                   <source media="(min-width:1200px)" srcset="img/projects-2-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/projects-2-1024.jpg">
                   <source media="(min-width:662px)" srcset="img/projects-2-768.jpg">
-                  <img class="projects__slide-img" src="img/projects-2-320.jpg" alt="Логотип фирмы Институт современного искуства">
+                  <img class="projects__slide-img" src="img/projects-2-320.jpg"
+                    alt="Логотип фирмы Институт современного искуства">
                 </picture>
               </button>
               <button class="projects__slide swiper-slide flex">
@@ -1291,7 +1348,8 @@
                   <source media="(min-width:1200px)" srcset="img/projects-8-1920.jpg">
                   <source media="(min-width:900px)" srcset="img/projects-8-1024.jpg">
                   <source media="(min-width:662px)" srcset="img/projects-8-768.jpg">
-                  <img class="projects__slide-img" src="img/projects-8-320.jpg" alt="Логотип фирмы Ваттс галлерея виллы артистов">
+                  <img class="projects__slide-img" src="img/projects-8-320.jpg"
+                    alt="Логотип фирмы Ваттс галлерея виллы артистов">
                 </picture>
               </button>
               <button class="projects__slide swiper-slide flex">
@@ -1316,40 +1374,42 @@
       <div class="contacts__border">
         <div class="contacts__container container">
           <div class="contacts__flex flex">
-  
+
             <div class="contacts__address">
               <h3 class="contacts__address-title">Шоурум № 4</h3>
               <p class="contacts__address-loc">Леонтьевский переулок, дом 5/1</p>
             </div>
-  
+
             <!-- Contacts Form -->
-  
+
             <div class="contacts__form form flex">
-              <form class="form__block flex" action="#" method="post" enctype="multipart/form-data" autocomplete="off" id="contacts-validate">
-  
+              <form class="form__block flex" action="#" method="post" enctype="multipart/form-data" autocomplete="off"
+                id="contacts-validate">
+
                 <div class="form__item">
                   <input class="form__input" type="text" placeholder="Имя*" name="name" id="name">
                 </div>
                 <div class="form__item">
                   <input class="form__input" type="tel" placeholder="Телефон*" name="phone" id="phone">
                 </div>
-  
+
                 <button class="form__btn border-btn" aria-label="Заказать обратный звонок">
                   <span class="form__btn-desktop">Заказать обратный звонок</span>
                   <span class="form__btn-mobile">Заказать</span>
                 </button>
-  
+
               </form>
             </div>
-  
+
             <!-- Contacts social -->
-  
+
             <div class="contacts__social">
               <h3 class="contacts__social-title">Связаться в один клик</h3>
               <ul class="contacts__social-list flex">
                 <li class="contacts__social-item">
                   <a class="contacts__social-icon" href="#" aria-label="Ссылка Ватсап">
-                    <svg class="contacts__icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="contacts__icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
                         fill="#30BF39" />
@@ -1361,7 +1421,8 @@
                 </li>
                 <li class="contacts__social-item">
                   <a class="contacts__social-icon" href="#" aria-label="Ссылка телеграм">
-                    <svg class="contacts__icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="contacts__icon-svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
                         fill="#26A5E4" />
@@ -1373,14 +1434,14 @@
                 </li>
               </ul>
             </div>
-  
+
           </div>
-  
-  
+
+
         </div>
       </div>
 
-          <!-- Map  -->
+      <!-- Map  -->
 
       <div class="contacts__map map">
         <div class="map__container" id="map"></div>
@@ -1406,7 +1467,8 @@
           <ul class="footer__soc-list flex">
             <li class="footer__soc-item">
               <a class="footer__soc-icon" href="#" aria-label="Ссылка Вконтакте">
-                <svg class="footer__icon-svg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="footer__icon-svg" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z"
                     fill="#CACACA" />
@@ -1415,7 +1477,8 @@
             </li>
             <li class="footer__soc-item">
               <a class="footer__soc-icon" href="#" aria-label="Ссылка Однокласники">
-                <svg class="footer__icon-svg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="footer__icon-svg" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z"
                     fill="#CACACA" />
@@ -1438,8 +1501,7 @@
 
   </main>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
-  <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script> -->
+
 
 
 </body>
