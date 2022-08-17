@@ -94,8 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
    //  painter.scrollIntoView({block: "center", behavior: "smooth"});
   // });
 
-  let name = document.querySelector('. catalog__accordion-name');
-  let el = document.querySelector('. catalog__tabs');
+  let name = document.querySelector('.catalog__accordion-name');
+  let el = document.querySelector('.catalog__tabs');
 
   name.addEventListener('click', function () {
     el.scrollIntoView(true);
