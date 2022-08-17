@@ -83,15 +83,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // })();
 
 
-  const painter = document.getElementById('catalog-tabs');
-  const btn = document.querySelector('catalog__accordion-name');
+  // const painter = document.getElementById('catalog-tabs');
+  // const btn = document.querySelector('catalog__accordion-name');
 
   // function btnClick() {
   //   painter.scrollIntoView({block: "center", behavior: "smooth"});
   // }
 
-  btn.addEventListener('click', function () {
-    painter.scrollIntoView({block: "center", behavior: "smooth"});
+  // btn.addEventListener('click', function () {
+   //  painter.scrollIntoView({block: "center", behavior: "smooth"});
+  // });
+
+  let name = document.querySelector('. catalog__accordion-name');
+  let el = document.querySelector('. catalog__tabs');
+
+  name.addEventListener('click', function () {
+    el.scrollIntoView(true);
   });
 
   
