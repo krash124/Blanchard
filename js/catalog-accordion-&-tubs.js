@@ -43,56 +43,49 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   };
-
-  // (() => {
-  //   const MOBILE_WIDTH = 961;
   
-  //   function getWindowWidth () {
-  //     return Math.max(
-  //       document.body.scrollWidth,
-  //       document.documentElement.scrollWidth,
-  //       document.body.offsetWidth,
-  //       document.documentElement.offsetWidth,
-  //       document.body.clientWidth,
-  //       document.documentElement.clientWidth
-  //     );
-  //   }
-  
-  //   function scrollToContent (link, isMobile) {
-  //     if (isMobile && getWindowWidth() > MOBILE_WIDTH) {
-  //       return;
-  //     }
-  
-  //     const href = link.getAttribute('href').substring(1);
-  //     const scrollTarget = document.getElementById(href);
-  //     const elementPosition = scrollTarget.getBoundingClientRect().top;
-  
-  //     window.scrollBy({
-  //         top: elementPosition,
-  //         behavior: 'smooth'
-  //     });
-  //   }
-  
-  //   document.querySelectorAll('.catalog__accordion-name').forEach(link => {
-  //     link.addEventListener('click', function(e) {
-  //         e.preventDefault();
-  
-  //         scrollToContent(this, true);
-  //     });
-  //   });
-  // })();
 
 
-  const painter = document.getElementById('catalog-tabs');
-  const btn = document.querySelector('catalog__accordion-name');
+  (() => {
+    const MOBILE_WIDTH = 1023;
+    
+    function getWindowWidth () {
+      return Math.max(
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth,
+        document.body.offsetWidth,
+        document.documentElement.offsetWidth,
+        document.body.clientWidth,
+        document.documentElement.clientWidth
+      );
+    }
+    
+    function scrollToContent (link, isMobile) {
+      if (isMobile && getWindowWidth() > MOBILE_WIDTH) {
+        return;
+      }
+    
+      const href = link.getAttribute('data-scroll-target');
+  
+      const scrollTarget = document.getElementById(href);
+      const elementPosition = scrollTarget.getBoundingClientRect().top;
+    
+      window.scrollBy({
+          top: elementPosition,
+          behavior: 'smooth'
+      });
+    }
+    
+    document.querySelectorAll('.js-scroll-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+          e.preventDefault();
+    
+          scrollToContent(this, true);
+      });
+    });
+  })();
 
-  // function btnClick() {
-  //   painter.scrollIntoView({block: "center", behavior: "smooth"});
-  // }
 
-  btn.addEventListener('click', function () {
-    painter.scrollIntoView({block: "center", behavior: "smooth"});
-  });
 
   
 
