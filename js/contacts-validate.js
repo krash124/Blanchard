@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       errorMessage: 'Не достаточное количество символов',
     },
+
+    // PHP mailer
     
   ]).onSuccess((event) => {
     console.log('Validation passes and form submitted', event);

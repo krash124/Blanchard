@@ -44,27 +44,13 @@ try {
     // Получатель письма
     $mail->addAddress('krash078@gmail.com');
 
-     // Прикрипление файлов к письму
-  if (!empty($file['name'][0])) {
-    for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
-      $uploadfile = tempnam(sys_get_temp_dir(), sha1($file['name'][$ct]));
-      $filename = $file['name'][$ct];
-      if (move_uploaded_file($file['tmp_name'][$ct], $uploadfile)) {
-          $mail->addAttachment($uploadfile, $filename);
-          $rfile[] = "Файл $filename прикреплён";
-      } else {
-          $rfile[] = "Не удалось прикрепить файл $filename";
-      }
-    }
-  }
-
-  $mail->send();
-
+    
     // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;
     $mail->Body = $body;
-
+    
+    $mail->send();
 
 } catch (Exception $e) {
   $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";

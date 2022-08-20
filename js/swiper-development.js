@@ -66,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const swiperNext = document.querySelector('.dev__swiper-next');
     const pag = document.querySelector('.dev__swiper-pagination');
     if ( window.innerWidth > 1650  ) {
-      console.log('Success', window.innerWidth);
       swiperPrev.style.display = 'block';
       swiperNext.style.display = 'block';
       pag.style.display = 'none'

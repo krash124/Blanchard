@@ -663,7 +663,7 @@ textarea {
 }
 
 .search-form__btn {
-  margin-right: 5px;
+  margin-right: 10px;
   cursor: pointer;
   background-color: transparent;
   transform: translateY(4px);
@@ -810,7 +810,7 @@ textarea {
 
 .hero__block {
   max-width: 597px;
-  padding-top: 67px;
+  padding-top: 137px;
   padding-bottom: 122px;
 }
 
@@ -1676,7 +1676,8 @@ textarea {
 }
 
 .catalog__accordion-name:focus-visible:not(:active):not(:hover) {
-  color: var(--purple-light);
+  color: var(--black);
+  background-color: var(--purple-light);
 }
 
 .catalog__accordion-name:active {
@@ -1695,7 +1696,7 @@ textarea {
 
 
 .catalog__accordion-name--active:not(:hover):not(:focus-visible) {
-  background-color: var(--purple-light);
+  color: var(--purple-light);
   transition-property: background-color;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
