@@ -1695,7 +1695,7 @@ textarea {
 }
 
 
-.catalog__accordion-name--active:not(:hover):not(:focus-visible) {
+.catalog__accordion-name--active:not(:focus-visible) {
   color: var(--purple-light);
   transition-property: background-color;
   transition-duration: 0.3s;
