@@ -1,4 +1,4 @@
-/* fonts */
+
 
 
 @font-face {
@@ -87,15 +87,7 @@ input {
   outline: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
+
 
 textarea {
   border: none;
@@ -815,6 +807,7 @@ textarea {
 }
 
 .hero__title {
+  margin: 0;
   color: var(--white);
   font-weight: 700;
   font-size: 72px;
@@ -822,6 +815,7 @@ textarea {
 }
 
 .hero__descr {
+  margin: 0;
   margin-bottom: 116px;
   color: var(--white);
   font-weight: 700;
@@ -856,6 +850,7 @@ textarea {
 }
 
 .about__title {
+  margin: 0;
   margin-bottom: 15px;
   color: var(--black);
   font-weight: 400;
@@ -864,6 +859,7 @@ textarea {
 }
 
 .about__descr {
+  margin: 0;
   color: var(--black);
   font-weight: 400;
   font-size: 16px;
@@ -900,6 +896,7 @@ textarea {
 }
 
 .gallery__title {
+  margin: 0;
   margin-bottom: 14px;
   color: var(--white);
   font-weight: 400;
@@ -917,6 +914,7 @@ textarea {
 }
 
 .gallery__select-title {
+  margin: 0;
   margin-bottom: 9px;
   font-weight: 600;
   font-size: 16px;
@@ -1107,8 +1105,8 @@ textarea {
   position: absolute;
   left: 6px;
   top: 50%;
-  width: 2px;
-  height: 2px;
+  width: 4px;
+  height: 4px;
   border: 1px solid var(--purple-light);
   border-radius: 50%;
   background-color: var(--purple-light);
@@ -1414,6 +1412,7 @@ textarea {
 }
 
 .gallery__modals-autor {
+  margin: 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -1421,6 +1420,7 @@ textarea {
 }
 
 .gallery__modals-name {
+  margin: 0;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -1428,6 +1428,7 @@ textarea {
 }
 
 .gallery__modals-data {
+  margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -1441,6 +1442,7 @@ textarea {
 }
 
 .gallery__modals-descr {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1466,6 +1468,7 @@ textarea {
 }
 
 .catalog__descr-title {
+  margin: 0;
   padding-bottom: 15px;
   font-weight: 400;
   font-size: 48px;
@@ -1474,6 +1477,7 @@ textarea {
 }
 
 .catalog__descr-text {
+  margin: 0;
   width: 68%;
   font-weight: 400;
   font-size: 16px;
@@ -1522,6 +1526,7 @@ textarea {
 }
 
 .catalog__tabs-name {
+  margin: 0;
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 24px;
@@ -1538,6 +1543,7 @@ textarea {
 }
 
 .catalog__tabs-descr {
+  margin: 0;
   margin-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
@@ -1726,6 +1732,7 @@ textarea {
 }
 
 .catalog__accordion-title {
+  margin: 0;
   margin-bottom: 5px;
   font-weight: 600;
   font-size: 24px;
@@ -1734,6 +1741,7 @@ textarea {
 }
 
 .catalog__accordion-descr {
+  margin: 0;
   max-width: 275px;
   margin-bottom: 5px;
   font-weight: 400;
@@ -1852,6 +1860,7 @@ textarea {
 
 .dev__box {
   padding: 0 50px;
+  padding-bottom: 40px;
   flex-direction: column;
   align-items: flex-start;
   flex: 1 0 auto;
@@ -1866,6 +1875,7 @@ textarea {
 }
 
 .dev__title {
+  margin: 0;
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 48px;
@@ -1874,6 +1884,7 @@ textarea {
 }
 
 .dev__location {
+  margin: 0;
   margin-bottom: 13px;
   font-weight: 600;
   font-size: 12px;
@@ -1882,6 +1893,7 @@ textarea {
 }
 
 .dev__appellation {
+  margin: 0;
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 24px;
@@ -1890,6 +1902,7 @@ textarea {
 }
 
 .dev__descr {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -1898,7 +1911,6 @@ textarea {
 
 .dev__link {
   position: relative;
-  margin-bottom: 41px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -2054,6 +2066,7 @@ textarea {
 }
 
 .projects__title {
+  margin: 0;
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 48px;
@@ -2062,6 +2075,7 @@ textarea {
 }
 
 .projects__descr {
+  margin: 0;
   margin-bottom: 19px;
   max-width: 1080px;
   font-weight: 400;
@@ -2086,6 +2100,10 @@ textarea {
   transition-property: background-color, color;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+}
+
+.tippy-logo {
+  color: var(--black);
 }
 
 @media (hover: hover) {
@@ -2211,6 +2229,7 @@ textarea {
 /* Projects Swiper */
 
 .projects__title-swiper {
+  margin: 0;
   margin-bottom: 23px;
   font-weight: 600;
   font-size: 24px;
@@ -2319,6 +2338,7 @@ textarea {
 }
 
 .contacts__address-title {
+  margin: 0;
   padding-top: 6px;
   font-weight: 600;
   font-size: 24px;
@@ -2327,6 +2347,7 @@ textarea {
 }
 
 .contacts__address-loc {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -2431,6 +2452,7 @@ textarea {
 /* Contacts social */
 
 .contacts__social-title {
+  margin: 0;
   margin-bottom: 6px;
   font-weight: 600;
   font-size: 24px;
