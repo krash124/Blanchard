@@ -275,6 +275,10 @@
 
   /* Catalog Accordion */
 
+  .catalog__bottom {
+    gap: 50px;
+  }
+
   .catalog__accordion {
     min-width: auto;
   }
@@ -391,7 +395,7 @@
   /* Contacts */
 
   .contacts__container {
-    padding-top: 18px;
+    padding-top: 15px;
     padding-bottom: 15px;
   }
 

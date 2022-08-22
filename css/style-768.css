@@ -128,6 +128,10 @@
 
   /* Catalog tasb */
 
+  .catalog__bottom {
+    gap: 85px;
+  }
+
   .catalog__tabs-img {
     padding-bottom: 20px;
   }
@@ -153,12 +157,19 @@
 
   /* Development */
 
+  .dev__title {
+    margin-bottom: 14px;
+  }
+
+  .dev__slide {
+    min-height: 683px;
+  }
+
   .dev__box {
     padding-bottom: 46px;
   }
 
   .dev__location {
-    margin-bottom: 1px;
     transform: translateX(13px);
   }
 
@@ -186,6 +197,12 @@
 
   .projects__slide {
     min-height: 106px;
+  }
+
+  /* Contacts */
+
+  .contacts__container {
+    padding-top: 33px;
   }
 
   /* Contacts Form */

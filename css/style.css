@@ -1459,7 +1459,7 @@ textarea {
 
 .catalog__container {
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 75px;
   background-color: var(--white);
 }
 
@@ -2125,6 +2125,7 @@ textarea {
 
 .tippy-box[data-theme~='Blanchard'] {
   padding: 6px 4px;
+  border-radius: 0px;
   text-align: center;
   font-weight: 600;
   font-size: 12px;
@@ -2329,7 +2330,7 @@ textarea {
 
 .contacts__container {
   padding-top: 36px;
-  padding-bottom: 37px;
+  padding-bottom: 36px;
 }
 
 .contacts__flex {
@@ -2339,7 +2340,7 @@ textarea {
 
 .contacts__address-title {
   margin: 0;
-  padding-top: 6px;
+  padding-top: 9px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -2515,7 +2516,7 @@ textarea {
 
 .footer__container {
   padding-top: 49px;
-  padding-bottom: 48px;
+  padding-bottom: 42px;
   justify-content: space-between;
   align-items: center;
 }

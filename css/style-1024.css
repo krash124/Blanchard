@@ -472,6 +472,7 @@
   /* Contacts */
 
   .contacts__container {
+    padding-top: 31px;
     padding-bottom: 38px;
   }
 
