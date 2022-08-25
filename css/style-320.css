@@ -412,6 +412,10 @@
     font-size: 18px;
     line-height: 25px;
   }
+
+  .contacts__address-loc {
+    margin-bottom: 0;
+  }
   
     .contacts__form {
       min-height: 199px;
@@ -447,6 +451,10 @@
 
   .form__btn {
     padding: 10.5px 32px;
+  }
+
+  .contacts__social {
+    padding-top: 0;
   }
 
   .contacts__social-title {

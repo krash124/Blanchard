@@ -502,6 +502,8 @@
   }
 
   .contacts__form {
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 10px;
     justify-content: flex-start;
     flex-grow: 2;
@@ -509,6 +511,7 @@
   }
 
   .contacts__address-loc {
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -535,7 +538,8 @@
   }
 
   .contacts__social {
-    flex-grow: 1;
+    padding-top: 20px;
+    flex-grow: 142;
     flex-shrink: 0;
   }
 

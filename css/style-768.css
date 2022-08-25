@@ -214,6 +214,10 @@
     padding-bottom: 38px;
   }
 
+  .contacts__address-loc {
+    margin-bottom: 0px;
+  }
+
   /* Contacts Form */
 
   .contacts__form {
@@ -240,8 +244,26 @@
     margin-right: 20px;
   }
 
+  .contacts__social {
+    padding-top: 0;
+  }
+
   .form__btn {
     padding: 10.5px 26px;
+  }
+
+  @media (max-width:740px) {
+    .contacts__address-loc {
+      margin-bottom: 20px;
+    }
+
+    .form__item:first-child {
+      margin-bottom: 20px;
+    }
+
+    .contacts__social {
+      padding-top: 20px;
+    }
   }
 
 }

@@ -2359,6 +2359,7 @@ textarea {
 /* Contacts Form */
 
 .contacts__form {
+  padding: 0 20px;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
@@ -2513,6 +2514,22 @@ textarea {
 
 [class*="ground-pane"] {
   filter: grayscale(1);
+}
+
+@media (max-width:1530px) {
+  .contacts__flex {
+    flex-direction: column;
+  }
+
+  .contacts__form {
+    padding: 0;
+    padding-top: 20px;
+    justify-content: flex-start;
+  }
+
+  .contacts__social {
+    padding-top: 20px;
+  }
 }
 
 
