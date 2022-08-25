@@ -398,7 +398,17 @@
     min-height: 594px;
   }
 
+  /* Catalog tabs */
+
+  .catalog__tabs {
+    flex-basis: calc((100% - 50px) / 2);
+  }
+
   /* Catalog accordion  */
+
+  .catalog__accordion {
+    flex-basis: calc((100% - 50px) / 2);
+  }
 
   .catalog__accordion-content {
     padding-right: 0;
@@ -473,7 +483,7 @@
 
   .contacts__container {
     padding-top: 31px;
-    padding-bottom: 38px;
+    padding-bottom: 18px;
   }
 
   .contacts__address-title {
@@ -481,7 +491,21 @@
   }
 
   .contacts__flex {
-    gap: 30px;
+    min-height: 282px;
+    flex-direction: column;
+    /* gap: 30px; */
+  }
+
+  .contacts__address {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .contacts__form {
+    padding-top: 10px;
+    justify-content: flex-start;
+    flex-grow: 2;
+    flex-shrink: 0;
   }
 
   .contacts__address-loc {
@@ -490,12 +514,29 @@
     line-height: 19px;
   }
 
+  .form__block {
+    max-width: 924px;
+    justify-content: flex-start;
+  }
+
+  .form__item {
+    margin-bottom: 12px;
+    margin-right: 19px;
+    flex-grow: 0;
+  }
+
   .form__btn {
+    max-height: 56px;
     padding: 10.5px 40px;
   }
 
   [class*="ymaps-2-1-79-controls"] {
     display: none;
+  }
+
+  .contacts__social {
+    flex-grow: 1;
+    flex-shrink: 0;
   }
 
   /* Footer */

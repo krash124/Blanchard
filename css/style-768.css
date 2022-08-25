@@ -55,7 +55,7 @@
   .gallery__container {
     padding-top: 79px;
     padding-bottom: 80px;
-    gap: 18px;
+    /* gap: 18px; */
   }
 
   .gallery__title {
@@ -64,6 +64,7 @@
 
   .gallery__gallery-filters {
     min-height: 299px;
+    margin-bottom: 18px;
   }
 
   .filters-gallery__bottom {
@@ -118,6 +119,7 @@
 
   /* Catalog */
 
+
   .catalog__container {
     padding-bottom: 24px;
   }
@@ -126,10 +128,12 @@
     padding-bottom: 21px;
   }
 
+
   /* Catalog tasb */
 
   .catalog__bottom {
-    gap: 85px;
+    /* gap: 85px; */
+    flex-direction: column-reverse;
   }
 
   .catalog__tabs-img {
@@ -141,6 +145,10 @@
   }
 
   /* Catalog accordion */
+
+  .catalog__accordion {
+    margin-bottom: 85px;
+  }
 
   .catalog__accordion-list {
     column-gap: 39px;
@@ -203,20 +211,33 @@
 
   .contacts__container {
     padding-top: 33px;
+    padding-bottom: 38px;
   }
 
   /* Contacts Form */
 
+  .contacts__form {
+    padding-top: 0;
+    min-height: 174px;
+  }
+
   .form__block {
-    gap: 11px;
+    max-width: 668px;
+    /* gap: 11px; */
   }
 
   .form__input {
     padding-right: 109px;
   }
 
+
+  .form__item {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
   .form__item:first-child {
-    margin-right: 8px;
+    margin-right: 20px;
   }
 
   .form__btn {

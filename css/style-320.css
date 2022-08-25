@@ -147,7 +147,7 @@
   .gallery__container {
     padding-top: 50px;
     padding-bottom: 21px;
-    gap: 30px;
+    /* gap: 30px; */
   }
 
   .gallery__title {
@@ -164,6 +164,7 @@
   .gallery__gallery-filters {
     width: 100%;
     min-height: 253px;
+    margin-bottom: 30px;
   }
 
   .choices {
@@ -276,11 +277,12 @@
   /* Catalog Accordion */
 
   .catalog__bottom {
-    gap: 50px;
+    /* gap: 50px; */
   }
 
   .catalog__accordion {
     min-width: auto;
+    margin-bottom: 50px;
   }
 
   .catalog__accordion-heading {
@@ -400,15 +402,24 @@
   }
 
   .contacts__flex {
-    gap: 20px;
+    /* gap: 20px; */
+    flex-direction: column;
   }
-
+  
   .contacts__address-title {
     margin-bottom: 4px;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
   }
+  
+    .contacts__form {
+      min-height: 199px;
+    }
+
+    .form__item {
+      margin-bottom: 20px;
+    }
 
   /* Contacts Form */
 
@@ -424,13 +435,15 @@
   }
 
   .form__block {
-    gap: 19px;
+    max-width: 290px;
+    /* gap: 19px; */
   }
 
   .form__input {
     padding-right: 75px;
     padding-bottom: 5px;
   }
+
 
   .form__btn {
     padding: 10.5px 32px;
