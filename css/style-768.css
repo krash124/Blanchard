@@ -227,6 +227,7 @@
 
   .form__block {
     max-width: 668px;
+    justify-content: space-between;
     /* gap: 11px; */
   }
 
@@ -236,7 +237,7 @@
 
 
   .form__item {
-    margin-right: 0;
+    margin-right: 0px;
     margin-bottom: 12px;
   }
 
@@ -252,7 +253,11 @@
     padding: 10.5px 26px;
   }
 
-  @media (max-width:740px) {
+  @media (max-width:767px) {
+    .form__item {
+      margin-right: 20px;
+    }
+
     .contacts__address-loc {
       margin-bottom: 20px;
     }

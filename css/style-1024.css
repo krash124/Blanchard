@@ -44,7 +44,7 @@
     position: absolute;
     content: "";
     left: 0;
-    top: 95%;
+    top: 92%;
     height: 3px;
     width: 24px;
     transition-property: background-color, transform, width, transform-origin, top;
