@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
       overlay.classList.remove('is-opened');
       lockScroll.classList.remove('lock')
     })
+  });
+
+  document.getElementById('burger-mobile').addEventListener('click', () => {
+    document.getElementById('nav-btn').focus()
   })
 
 
