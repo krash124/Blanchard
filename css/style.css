@@ -2374,7 +2374,7 @@ textarea {
 }
 
 .form__item {
-  margin-right: 10px;
+  margin-right: 9px;
   flex-grow: 1;
   position: relative;
 }
